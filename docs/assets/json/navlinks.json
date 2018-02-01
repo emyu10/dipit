@@ -1,6 +1,10 @@
 [
     {
-        "title": "Websites",
-        "link": "#"
+        "title": "Web Design",
+        "module": "Module One",
+        "link": "#/web-design",
+        "loadInto": "page",
+        "sidebarLinks": [],
+        "sidebarContent": ""
     }
 ]

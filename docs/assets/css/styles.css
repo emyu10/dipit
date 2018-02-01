@@ -42,19 +42,23 @@ a {
     grid-area: siteheader;
     background: #FFB300; /* amber_600 */
     color: #ffffff;
-    padding: 10px 25px;
-    font-size: 24pt;
+    padding: 5px 10px;
+    font-size: 16pt;
     z-index: 5;
 }
 
 #site-header > span {
-    font-size: 16pt;
+    font-size: 12pt;
     color: #FFF8E1; /* amber_50 */
 }
 
 #navbar {
     grid-area: navbar;
     background: #FFC107; /* amber_500 */
+    min-height: 37px;
+    vertical-align: middle;
+    display: block;
+    color: #ffffff;
     padding: 0 20px;
     box-shadow: 0 2px 2px  rgba(0, 0, 0, 0.2);
     z-index: 5;
@@ -110,5 +114,13 @@ a {
         "navbar navbar"
         "sidebar maincontent"
         "footer footer"
+    }
+    #site-header {
+        padding: 10px 25px;
+        font-size: 24pt;
+    }
+
+    #site-header > span {
+        font-size: 16pt;
     }
 }
