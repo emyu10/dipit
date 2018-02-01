@@ -41,7 +41,7 @@ a {
     grid-area: siteheader;
     background: #FFB300; /* amber_600 */
     color: #ffffff;
-    padding: 10px;
+    padding: 10px 25px;
     font-size: 24pt;
     z-index: 5;
 }
@@ -63,6 +63,8 @@ a {
     display: inline-block;
     padding: 10px;
     background: #FFAB00; /* amber_A700 */
+    font-size: 11pt;
+    margin: 0 2px;
 }
 #navbar > a:hover {
     display: inline-block;
