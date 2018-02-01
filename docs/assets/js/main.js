@@ -2,7 +2,7 @@ var app = new Object();
 
 window.addEventListener('load', function() {
     app.navbar = document.getElementById('navbar');
-    loadNavLinks();
+    // loadNavLinks();
 }, false);
 
 function loadNavLinks() {

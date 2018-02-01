@@ -1,0 +1,91 @@
+/*
+amber_50        #FFF8E1
+amber_100       #FFECB3
+amber_200       #FFE082
+amber_300       #FFD54F
+amber_400       #FFCA28
+amber_500       #FFC107
+amber_600       #FFB300
+amber_700       #FFA000
+amber_800       #FF8F00
+amber_900       #FF6F00
+amber_A100      #FFE57F
+amber_A200      #FFD740
+amber_A400      #FFC400
+amber_A700      #FFAB00
+*/
+
+@font-face {
+    font-family: Ubuntu-regular;
+    src: url('../fonts/Ubuntu-R.ttf');
+}
+
+body {
+    font-family: Ubuntu-regular;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+    "siteheader siteheader"
+    "navbar navbar"
+    "sidebar maincontent"
+    "footer footer"
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+#site-header {
+    grid-area: siteheader;
+    background: #FFB300; /* amber_600 */
+    color: #ffffff;
+    padding: 10px;
+    font-size: 24pt;
+    z-index: 5;
+}
+
+#site-header > span {
+    font-size: 16pt;
+    color: #FFF8E1; /* amber_50 */
+}
+
+#navbar {
+    grid-area: navbar;
+    background: #FFC107; /* amber_500 */
+    padding: 0 20px;
+    box-shadow: 0 2px 2px  rgba(0, 0, 0, 0.2);
+    z-index: 5;
+}
+
+#navbar > a {
+    display: inline-block;
+    padding: 10px;
+    background: #FFAB00; /* amber_A700 */
+}
+#navbar > a:hover {
+    display: inline-block;
+    padding: 10px;
+    background: #FFC400; /* amber_A400 */
+}
+
+#sidebar {
+    grid-area: sidebar;
+    background: #FFECB3; /* amber_100 */
+    color: #FF8F00; /* amber_800 */
+    padding: 20px;
+    box-shadow: 2px 0 2px  rgba(0, 0, 0, 0.2);
+    z-index: 4;
+}
+#main-content {
+    grid-area: maincontent;
+    padding: 10px;
+    color: #FF6F00; /* amber_900 */
+}
+#footer {
+    grid-area: footer;
+    background: #FFB300; /* amber_600 */
+    box-shadow: 2px 0 2px  rgba(0, 0, 0, 0.2);
+    z-index: 4;
+}
