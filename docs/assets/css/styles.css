@@ -25,12 +25,13 @@ body {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-    "siteheader siteheader"
-    "navbar navbar"
-    "sidebar maincontent"
-    "footer footer"
+    "siteheader"
+    "navbar"
+    "sidebar"
+    "maincontent"
+    "footer"
 }
 
 a {
@@ -95,4 +96,19 @@ a {
     box-shadow: 2px 0 2px  rgba(0, 0, 0, 0.2);
     text-align: center;
     z-index: 4;
+}
+
+@media screen and (min-width: 736px) {
+    body {
+        font-family: Ubuntu-regular, sans-serif;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas:
+        "siteheader siteheader"
+        "navbar navbar"
+        "sidebar maincontent"
+        "footer footer"
+    }
 }
