@@ -1,10 +1,25 @@
 [
     {
+        "title": "Home",
+        "module": "",
+        "link": ".",
+        "loadInto": "page",
+        "sidebarLinks": [
+
+        ]
+    },
+    {
         "title": "Web Design",
         "module": "Module One",
         "link": "#/web-design",
         "loadInto": "page",
-        "sidebarLinks": [],
+        "sidebarLinks": [
+            {
+                "title": "HTML Meta Tags",
+                "link": "#/web-design/meta-tags",
+                "loadInto": "page"
+            }
+        ],
         "sidebarContent": ""
     }
 ]

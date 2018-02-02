@@ -85,6 +85,24 @@ a {
     box-shadow: 2px 0 2px  rgba(0, 0, 0, 0.2);
     z-index: 4;
 }
+#sidebar-links {
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+    list-style-type: none;
+    color: #FF8F00; /* amber_800 */
+    border-bottom: thin solid #FF8F00; /* amber_800 */
+}
+#sidebar-links li {
+
+}
+#sidebar-links li a {
+    display: block;
+    background: #FFF8E1; /* amber_50 */
+    padding: 5px;
+    font-size: 11pt;
+    color: #FFAB00; /* amber_A700 */
+}
+
 #main-content {
     grid-area: maincontent;
     padding: 10px 10px 10px 20px;
