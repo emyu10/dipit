@@ -38,6 +38,12 @@ a {
     text-decoration: none;
     color: #ffffff;
 }
+
+pre {
+    background: #CFD8DC;
+    line-height: 1.5em;
+    padding: 5px;
+}
 #site-header {
     grid-area: siteheader;
     background: #FFB300; /* amber_600 */

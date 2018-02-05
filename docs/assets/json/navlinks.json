@@ -1,5 +1,6 @@
 [
     {
+        "id": "home",
         "title": "Home",
         "module": "",
         "link": ".",
@@ -9,17 +10,20 @@
         ]
     },
     {
+        "id": "web-design",
         "title": "Web Design",
         "module": "Module One",
         "link": "#/web-design",
         "loadInto": "page",
         "sidebarLinks": [
             {
+                "id": "html-meta-tags",
                 "title": "HTML Meta Tags",
-                "link": "#/web-design/meta-tags",
+                "link": "#/web-design/html-meta-tags",
                 "loadInto": "page"
             }
         ],
+        "sidebarLinksLoaded": false,
         "sidebarContent": ""
     }
 ]
