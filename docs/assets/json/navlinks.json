@@ -34,6 +34,12 @@
                 "title": "HTML Lists",
                 "link": "#/web-design/lists",
                 "loadInto": "page"
+            },
+            {
+                "id": "practice-questions-1",
+                "title": "Practice Questions 1",
+                "link": "#/web-design/practice-questions-1",
+                "loadInto": "page"
             }
         ],
         "sidebarLinksLoaded": false,
