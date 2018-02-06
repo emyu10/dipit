@@ -99,7 +99,7 @@ pre {
     border-bottom: thin solid #FF8F00; /* amber_800 */
 }
 #sidebar-links li {
-
+    margin-bottom: 2px;
 }
 #sidebar-links li a {
     display: block;
@@ -115,6 +115,22 @@ pre {
     color: #FF6F00; /* amber_900 */
     line-height: 2em;
 }
+
+#main-content a {
+    color: #FFAB00; /* amber_A700 */
+    text-decoration: none;
+}
+
+#main-content h4, #main-content h5, #main-content h6 {
+    margin: 2px 0;
+    text-decoration: underline;
+}
+
+#main-content h1, #main-content h2, #main-content h3 {
+    margin: 20px 0 5px 0;
+    padding: 0;
+}
+
 #footer {
     grid-area: footer;
     background: #FFB300; /* amber_600 */

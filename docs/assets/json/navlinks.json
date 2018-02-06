@@ -21,6 +21,19 @@
                 "title": "HTML Meta Tags",
                 "link": "#/web-design/html-meta-tags",
                 "loadInto": "page"
+            },
+            {
+                "id": "linking-documents",
+                "title": "Linking Documents",
+                "link": "#/web-design/linking-documents",
+                "loadInto": "page"
+            }
+            ,
+            {
+                "id": "lists",
+                "title": "HTML Lists",
+                "link": "#/web-design/lists",
+                "loadInto": "page"
             }
         ],
         "sidebarLinksLoaded": false,
