@@ -130,6 +130,9 @@ pre {
     margin: 20px 0 5px 0;
     padding: 0;
 }
+#main-content p, #main-content pre {
+    margin: 2px 0;
+}
 
 #footer {
     grid-area: footer;
