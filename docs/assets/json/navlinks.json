@@ -17,6 +17,18 @@
         "loadInto": "page",
         "sidebarLinks": [
             {
+                "id": "intro",
+                "title": "Intro: Definitions & History",
+                "link": "#/web-design/intro",
+                "loadInto": "page"
+            },
+            {
+                "id": "proper-intro",
+                "title": "In-depth Intro of HTML",
+                "link": "#/web-design/proper-intro",
+                "loadInto": "page"
+            },
+            {
                 "id": "html-meta-tags",
                 "title": "HTML Meta Tags",
                 "link": "#/web-design/html-meta-tags",
