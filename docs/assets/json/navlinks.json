@@ -29,6 +29,12 @@
                 "loadInto": "page"
             },
             {
+                "id": "basic-tags",
+                "title": "Basic Tags",
+                "link": "#/web-design/basic-tags",
+                "loadInto": "page"
+            },
+            {
                 "id": "html-meta-tags",
                 "title": "HTML Meta Tags",
                 "link": "#/web-design/html-meta-tags",
