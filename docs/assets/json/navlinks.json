@@ -60,6 +60,12 @@
                 "loadInto": "page"
             },
             {
+                "id": "css-animations",
+                "title": "CSS Animations",
+                "link": "#/web-design/css-animations",
+                "loadInto": "page"
+            },
+            {
                 "id": "website-competition-1",
                 "title": "Competition (Resort)",
                 "link": "#/web-design/website-competition-1",

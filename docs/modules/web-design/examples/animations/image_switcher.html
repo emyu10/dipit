@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Switcher</title>
+    <style>
+        @keyframes imgswitch {
+            0% {
+                background: url('../images/book.jpeg') no-repeat;
+                background-size: cover;
+                top: 0;
+                left: 0;
+                border: 6px solid #D50000;
+                color: #D50000;
+            }
+            25% {
+                background: url('../images/brainstorm.jpeg') no-repeat;
+                background-size: cover;
+                top: 0;
+                left: 300px;
+                border: 6px solid #6200EA;
+                color: #6200EA;
+            }
+            50% {
+                background: url('../images/classroom.jpeg') no-repeat;
+                background-size: cover;
+                top: 300px;
+                left: 300px;
+                border: 6px solid #0091EA;
+                color: #0091EA;
+            }
+            75% {
+                background: url('../images/globe.jpeg') no-repeat;
+                background-size:cover;
+                top: 300px;
+                left: 0;
+                border: 6px solid #00C853;
+                color: #00C853;
+            }
+            100% {
+                background: url('../images/laptop.jpeg') no-repeat;
+                background-size:cover;
+                top: 0;
+                left: 0;
+                border: 6px solid #FFD600;
+                color: #FFD600;
+            }
+        }
+
+        #image_holder {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            animation: imgswitch 10s;
+            animation-iteration-count: infinite;
+            font-size: 24pt;
+            vertical-align: middle;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="image_holder">Image switcher box</div>
+</body>
+</html>

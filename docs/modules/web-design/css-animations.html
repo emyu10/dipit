@@ -1,0 +1,342 @@
+<h2>CSS3 Animations</h2>
+<section>
+    <ul>
+        <li>An animation lets an element gradually change from one style to another.</li>
+        <li>To use CSS3 animation, you must first specify some keyframes for the animation.</li>
+        <li>Keyframes hold what styles the element will have at certain times.</li>
+    </ul>
+</section>
+
+<section>
+    <h3>The @keyframes Rule</h3>
+    <ul>
+        <li>When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.</li>
+        <li>To get an animation to work, you must bind the animation to an element.</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Example 1</h3>
+    <a href="modules/web-design/examples/animations/example1.html" target="_blank">View Example</a>
+    <p><b>Note:</b> This animation does not work in Internet Explorer 9 and earlier versions.</p>
+    <p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 4s;
+    }
+    @keyframes example {
+        from {background-color: red;}
+        to {background-color: yellow;}
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h3>Example 2</h3>
+    <a href="modules/web-design/examples/animations/example2.html" target="_blank">View Example</a>
+    <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Animations&lt;/title&gt;
+	&lt;style&gt;
+	@keyframes example {
+		0% {background-color: red;}
+		25% {background-color: yellow;}
+		50% {background-color: blue;}
+		100% {background-color: green;}
+	}
+	div {
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		animation-name: example;
+		animation-duration: 8s;
+	}
+	&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;div&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h3>Example 3</h3>
+    <a href="modules/web-design/examples/animations/example3.html" target="_blank">View Example</a>
+    <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Animations&lt;/title&gt;
+	&lt;style&gt;
+	@keyframes example {
+		0% {background-color: red; left: 0px; top:0px}
+		25% {background-color: yellow; left: 300px; top:0px}
+		50% {background-color: blue; left: 300px; top:300px}
+		75% {background-color: green; left: 0px; top:300px}
+		100% {background-color: red; left: 0px; top:0px}
+	}
+	div {
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		position: relative;
+		animation-name: example;
+		animation-duration: 8s;
+	}
+	&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;div&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h3>Delay an Animation</h3>
+    <p>The animation-delay property specifies a delay for the start of an animation.</p>
+</section>
+
+<section>
+    <h3>Example 4</h3>
+    <a href="modules/web-design/examples/animations/example4.html" target="_blank">View Example</a>
+    <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Animations&lt;/title&gt;
+	&lt;style&gt;
+	@keyframes example {
+		0% {background-color: red; left: 0px; top:0px}
+		25% {background-color: yellow; left: 300px; top:0px}
+		50% {background-color: blue; left: 300px; top:300px}
+		75% {background-color: green; left: 0px; top:300px}
+		100% {background-color: red; left: 0px; top:0px}
+	}
+	div {
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		position: relative;
+		animation-name: example;
+		animation-duration: 8s;
+		animation-delay: 2s;
+	}
+	&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;div&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h3>Times</h3>
+    <p>The animation-iteration-count property specifies the number of times an animation should run.</p>
+    <pre>
+        animation-iteration-count: 3;
+        animation-iteration:infinite;
+    </pre>
+</section>
+
+<section>
+    <h3>Example 5</h3>
+    <a href="modules/web-design/examples/animations/example5.html" target="_blank">View Example</a>
+    <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Animations&lt;/title&gt;
+	&lt;style&gt;
+	@keyframes example {
+		0% {background-color: red; left: 0px; top:0px}
+		25% {background-color: yellow; left: 300px; top:0px}
+		50% {background-color: blue; left: 300px; top:300px}
+		75% {background-color: green; left: 0px; top:300px}
+		100% {background-color: red; left: 0px; top:0px}
+	}
+	div {
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		position: relative;
+		animation-name: example;
+		animation-duration: 8s;
+		animation-iteration-count: 3;
+		animation-direction: reverse;
+	}
+	&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;div&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h3>Animation in Reverse Direction</h3>
+    <p>The animation-direction property is used to let an animation run in reverse direction or alternate cycles.</p>
+    <pre>
+        div {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+            animation-direction: reverse;
+        }
+    </pre>
+</section>
+
+<section>
+    <h3>Alternate</h3>
+    <pre>
+        div {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+        }
+    </pre>
+</section>
+
+<section>
+    <h3>Example 6</h3>
+    <a href="modules/web-design/examples/animations/example6.html" target="_blank">View Example</a>
+    <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Animations&lt;/title&gt;
+	&lt;style&gt;
+	@keyframes example {
+		0% {background-color: red; left: 0px; top:0px}
+		25% {background-color: yellow; left: 300px; top:0px}
+		50% {background-color: blue; left: 300px; top:300px}
+		75% {background-color: green; left: 0px; top:300px}
+		100% {background-color: red; left: 0px; top:0px}
+	}
+	div {
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		position: relative;
+		animation-name: example;
+		animation-duration: 8s;
+		animation-iteration-count: 3;
+		animation-direction: alternate;
+	}
+	&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;div&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h3>Specify the Speed Curve of the Animation</h3>
+    <p>The animation-timing-function property specifies the speed curve of the animation.</p>
+    <p>
+        The animation-timing-function property can have the following values:
+        <ul>
+            <li><span style="color: red; font-weight: bold;">ease</span> - specifies an animation with slow start, then fast, then end slowly (this is default)</li>
+            <li><span style="color: red; font-weight: bold;">linear</span> - specifies an animation with the same speed from start to end</li>
+            <li><span style="color: red; font-weight: bold;">ease-in</span> - specifies an animation with a slow start</li>
+            <li><span style="color: red; font-weight: bold;">ease-out</span> - specifies an animation with a slow end</li>
+            <li><span style="color: red; font-weight: bold;">ease-in-out</span> - specifies an animation with a slow start and end</li>
+        </ul>
+    </p>
+</section>
+
+<section>
+    <h3>Example 7</h3>
+    <a href="modules/web-design/examples/animations/example7.html" target="_blank">View Example</a>
+    <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Animations&lt;/title&gt;
+	&lt;style&gt;
+	div {
+		width: 100px;
+		height: 50px;
+		background-color: red;
+		position: relative;
+		animation: mymove 5s infinite;
+	}
+	#div1 {animation-timing-function: linear; }
+	#div2 {animation-timing-function: ease; }
+	#div3 {animation-timing-function: ease-in; }
+	#div4 {animation-timing-function: ease-out; }
+	#div5 {animation-timing-function: ease-in-out; }
+
+	@keyframes mymove {
+		from {left: 0px; }
+		to {left: 100%; }
+	}
+	&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;div id="div1"&gt;linear&lt;/div&gt;
+	&lt;div id="div2"&gt;ease&lt;/div&gt;
+	&lt;div id="div3"&gt;ease-in&lt;/div&gt;
+	&lt;div id="div4"&gt;ease-out&lt;/div&gt;
+	&lt;div id="div5"&gt;ease-in-out&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h3>Animation Shorthand Property</h3>
+    <pre>
+        div {
+            animation-name: example;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    </pre>
+    <pre>
+        div {
+            animation: example 5s linear 2s infinite alternate;
+        }
+    </pre>
+</section>
+
+<a href="modules/web-design/ppts/CSS3-animations.pptx" target="_blank">Download Presentation</a>
