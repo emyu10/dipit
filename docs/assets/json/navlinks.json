@@ -58,6 +58,12 @@
                 "title": "Practice Questions 1",
                 "link": "#/web-design/practice-questions-1",
                 "loadInto": "page"
+            },
+            {
+                "id": "website-competition-1",
+                "title": "Competition (Resort)",
+                "link": "#/web-design/website-competition-1",
+                "loadInto": "page"
             }
         ],
         "sidebarLinksLoaded": false,
