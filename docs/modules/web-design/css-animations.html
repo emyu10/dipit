@@ -339,4 +339,75 @@
     </pre>
 </section>
 
+<section>
+    <h3>Example (Complimentory)</h3>
+    <a href="modules/web-design/examples/animations/image_switcher.html" target="_blank">View Example</a>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Image Switcher&lt;/title&gt;
+    &lt;style&gt;
+        @keyframes imgswitch {
+            0% {
+                background: url('images/book.jpeg') no-repeat;
+                background-size: cover;
+                top: 0;
+                left: 0;
+                border: 6px solid #D50000;
+                color: #D50000;
+            }
+            25% {
+                background: url('images/brainstorm.jpeg') no-repeat;
+                background-size: cover;
+                top: 0;
+                left: 300px;
+                border: 6px solid #6200EA;
+                color: #6200EA;
+            }
+            50% {
+                background: url('images/classroom.jpeg') no-repeat;
+                background-size: cover;
+                top: 300px;
+                left: 300px;
+                border: 6px solid #0091EA;
+                color: #0091EA;
+            }
+            75% {
+                background: url('images/globe.jpeg') no-repeat;
+                background-size:cover;
+                top: 300px;
+                left: 0;
+                border: 6px solid #00C853;
+                color: #00C853;
+            }
+            100% {
+                background: url('images/laptop.jpeg') no-repeat;
+                background-size:cover;
+                top: 0;
+                left: 0;
+                border: 6px solid #FFD600;
+                color: #FFD600;
+            }
+        }
+
+        #image_holder {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            animation: imgswitch 10s;
+            animation-iteration-count: infinite;
+            font-size: 24pt;
+            vertical-align: middle;
+            text-align: center;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div id="image_holder"&gt;Image switcher box&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
 <a href="modules/web-design/ppts/CSS3-animations.pptx" target="_blank">Download Presentation</a>
