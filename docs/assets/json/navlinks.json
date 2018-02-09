@@ -45,12 +45,17 @@
                 "title": "Linking Documents",
                 "link": "#/web-design/linking-documents",
                 "loadInto": "page"
-            }
-            ,
+            },
             {
                 "id": "lists",
                 "title": "HTML Lists",
                 "link": "#/web-design/lists",
+                "loadInto": "page"
+            },
+            {
+                "id": "grouping-elements",
+                "title": "Grouping HTML Elements",
+                "link": "#/web-design/grouping-elements",
                 "loadInto": "page"
             },
             {
