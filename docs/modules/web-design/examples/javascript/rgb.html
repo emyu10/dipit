@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic RGB Background</title>
+    <style>
+    #display {
+        min-height: 300px;
+    }
+
+    [type="range"] {
+        width: 100%;
+    }
+    </style>
+    <script>
+    var display, red, green, blue, redOutput, greenOutput, blueOutput;
+    var valRed = 0, valGreen = 0, valBlue = 0;
+    window.addEventListener("load", function () {
+        display = document.getElementById("display");
+        red = document.getElementById("red");
+        green = document.getElementById("green");
+        blue = document.getElementById("blue");
+
+        redOutput = document.getElementById("redOutput");
+        greenOutput = document.getElementById("greenOutput");
+        blueOutput = document.getElementById("blueOutput");
+
+        valRed = red.value;
+        valGreen = green.value;
+        valBlue = blue.value;
+
+        redOutput.value = red.value;
+        greenOutput.value = green.value;
+        blueOutput.value = blue.value;
+
+        red.addEventListener("change", function (e) {
+            valRed = e.target.value;
+            redOutput.value = e.target.value;
+            changeBg();
+        });
+
+        green.addEventListener("change", function (e) {
+            valGreen = e.target.value;
+            greenOutput.value = e.target.value;
+            changeBg();
+        });
+
+        blue.addEventListener("change", function (e) {
+            valBlue = e.target.value;
+            blueOutput.value = e.target.value;
+            changeBg();
+        });
+        changeBg();
+    });
+
+    function changeBg() {
+        display.style.backgroundColor = 'rgb(' + valRed + ',' + valGreen + ',' + valBlue+ ')';
+    }
+    </script>
+</head>
+
+<body>
+    <div id="display"></div>
+    <br>
+    <div>
+        <h3>Use the sliders below to adjust the color</h3>
+        <div>Red: <output id="redOutput"></output> <input type="range" id="red" min="0" max="255"></div>
+        <div>Green: <output id="greenOutput"></output> <input type="range" id="green" min="0" max="255"></div>
+        <div>Blue: <output id="blueOutput"></output> <input type="range" id="blue" min="0" max="255"></div>
+    </div>
+</body>
+</html>
