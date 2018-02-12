@@ -13,7 +13,9 @@
     });
 
     function changeBg() {
-        body[0].style.backgroundColor = getRandomColor();
+        var color = getRandomColor();
+        body[0].innerHTML = color;
+        body[0].style.backgroundColor = color;
     }
 
     function getRandomColor() {
