@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Moving Circle</title>
+    <style>
+        #circle {
+            position: relative;
+            border-radius: 50%;
+            background: black;
+            height: 100px;
+            width: 100px;
+            left: 0;
+            top: 0;
+        }
+
+        #container {
+            width: 900px;
+            height: 800px;
+            margin: 0 auto;
+            background: white;
+        }
+    </style>
+    <script>
+    var container, circle, body;
+    var valLeft = 0, valTop = 0;
+    window.addEventListener("load", function () {
+        circle = document.getElementById("circle");
+        body = document.getElementsByTagName("body");
+        setInterval(function () {
+            changeBg();
+            randomPosition();
+            moveTo();
+        }, 200);
+    });
+
+    function changeBg() {
+        var color = getRandomColor();
+        body[0].style.backgroundColor = color;
+        circle.style.backgroundColor = color;
+    }
+
+    function getRandomColor() {
+        var color = 'rgb(' + parseInt(Math.random() * 255) + ',' + parseInt(Math.random() * 255) + ',' + parseInt(Math.random() * 255)+ ')';
+        return color;
+    }
+    function moveTo() {
+
+        circle.style.left = valLeft + 'px';
+        circle.style.top = valTop + 'px';
+    }
+
+    function randomPosition() {
+        if (parseInt(Math.random() * 100) % 2 == 0) {
+            if (valLeft != 800) {
+                valLeft += 50;
+            }
+        } else {
+            if (valLeft != 0) {
+                valLeft -= 50;
+            }
+        }
+
+        if (parseInt(Math.random() * 100) % 2 == 0) {
+            if (valTop != 700) {
+                valTop += 50;
+            }
+        } else {
+            if (valTop != 0) {
+                valTop -= 50;
+            }
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="circle"></div>
+    </div>
+</body>
+</html>
