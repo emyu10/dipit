@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+	Age: <input type="text" id="age" value="18">
+	<button onclick="checkAge()">Check Age</button>
+	<p id="demo"></p>
+	
+	<script>
+	function checkAge() {
+		var age = Number(document.getElementById("age").value);
+		var voteable = (typeof age == 'number' && age >=18) ? "Old enough to vote" : "Too young to vote";
+		document.getElementById("demo").innerHTML = voteable;
+	}
+	</script>
+</body>
+</html>
