@@ -1,0 +1,51 @@
+<<!DOCTYPE html>
+<html>
+<body>
+	<h2>Find Bigger Number (3 numbers)</h2>
+	
+	<input type="number" id="num-one" placeholder="number one" style="padding: 5px;">
+	<input type="number" id="num-two" placeholder="number two" style="padding: 5px;">
+	<input type="number" id="num-three" placeholder="number three" style="padding: 5px;">
+	<input type="button" onclick="findBigger();" value="Submit">
+	<p id="display"></p>
+	<script>
+	
+
+	function findBigger() {
+		var numOne = parseFloat(document.getElementById("num-one").value);
+		var numTwo = parseFloat(document.getElementById("num-two").value);
+		var numThree = parseFloat(document.getElementById("num-three").value);
+		var display = document.getElementById("display");
+		
+		// if (numOne > numTwo) {
+		// 	if (numOne > numThree) {
+		// 		//num one is biggest
+		// 		display.innerHTML = numOne + " (num one) is biggest";
+		// 	} else {
+		// 		//num three is biggest
+		// 		display.innerHTML = numThree + " (num three) is biggest";
+		// 	}
+		// } else {
+		// 	if (numTwo > numThree) {
+		// 		//num two is biggest
+		// 		display.innerHTML = numTwo + " (num two) is biggest";
+		// 	} else {
+		// 		//num three is biggest
+		// 		display.innerHTML = numThree + " (num three) is biggest";
+		// 	}
+		// }
+		
+		if (numOne > numTwo && numOne > numThree) {
+			//num one
+			display.innerHTML = numOne + " (num one) is biggest";
+		} else if (numTwo > numOne && numTwo > numThree) {
+			//num two
+			display.innerHTML = numTwo + " (num two) is biggest";
+		} else {
+			//num three
+			display.innerHTML = numThree + " (num three) is biggest";
+		}
+	}
+	</script>
+</body>
+</html>

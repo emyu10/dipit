@@ -1,0 +1,28 @@
+<<!DOCTYPE html>
+<html>
+<body>
+	<h2>Find Bigger Number</h2>
+	
+	<input type="number" id="num-one" placeholder="number one" style="padding: 5px;">
+	<input type="number" id="num-two" placeholder="number two" style="padding: 5px;">
+	<input type="button" onclick="findBigger();" value="Submit">
+	<p id="display"></p>
+	<script>
+	
+
+	function findBigger() {
+		var numOne = parseFloat(document.getElementById("num-one").value);
+		var numTwo = parseFloat(document.getElementById("num-two").value);
+		var display = document.getElementById("display");
+		
+		if (numOne > numTwo) {
+			display.innerHTML = numOne + " (number one) is bigger.";
+		} else if (numTwo > numOne) {
+			display.innerHTML = numTwo + " (number two) is bigger.";
+		} else {
+			display.innerHTML = "both numbers are equal.";
+		}
+	}
+	</script>
+</body>
+</html>
