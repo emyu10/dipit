@@ -65,6 +65,12 @@
                 "loadInto": "page"
             },
             {
+                "id": "css-margins",
+                "title": "CSS Margins",
+                "link": "#/web-design/css-margins",
+                "loadInto": "page"
+            },
+            {
                 "id": "css-animations",
                 "title": "CSS Animations",
                 "link": "#/web-design/css-animations",
