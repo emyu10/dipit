@@ -71,6 +71,12 @@
                 "loadInto": "page"
             },
             {
+                "id": "css-padding",
+                "title": "CSS Padding",
+                "link": "#/web-design/css-padding",
+                "loadInto": "page"
+            },
+            {
                 "id": "css-animations",
                 "title": "CSS Animations",
                 "link": "#/web-design/css-animations",
