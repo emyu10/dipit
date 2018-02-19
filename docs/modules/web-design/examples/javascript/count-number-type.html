@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="demo"></p>
+    <script>
+    var countOoredoo = 0;
+    var countDhiraagu = 0;
+    var countAirtel = 0;
+    var countUnknown = 0;
+    var invalid = 0;
+
+    var o = [];
+    var d = [];
+    var a = [];
+    var u = [];
+
+    var numOfMobilesToCheck = parseInt(prompt('How many numbers do you want to check?'));
+
+    for (var i = 0; i < numOfMobilesToCheck; i++) {
+        var firstThree = '';
+        var mobile = prompt('Enter mobile ' + (i + 1) + ' of ' + numOfMobilesToCheck);
+
+        if (mobile.length == 8) {
+            for (var j = 0; j < 3; j++) {
+                firstThree += mobile[j];
+            }
+
+            switch (firstThree) {
+                case '444': countOoredoo++; o.push(mobile); break;
+                case '555': countDhiraagu++; d.push(mobile); break;
+                case '666': countAirtel++; a.push(mobile); break;
+                default: countUnknown++; u.push(mobile);
+            }
+        } else {
+            invalid++;
+        }
+    }
+
+    document.write('<div>Ooredoo: ' + countOoredoo + ' : ' + o + '</div>');
+    document.write('<div>Dhiraagu: ' + countDhiraagu + ' : ' + d + '</div>');
+    document.write('<div>Airtel: ' + countAirtel + ' : ' + a + '</div>');
+    document.write('<div>Unknown: ' + countUnknown + ' : ' + u + '</div>');
+    document.write('<div>Invalid: ' + invalid + '</div>');
+    </script>
+</body>
+</html>
