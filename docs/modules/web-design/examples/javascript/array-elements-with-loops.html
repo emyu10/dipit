@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="demo"></p>
+    <script>
+    var sum = 0;
+    var marks = new Array(5);
+    for (var i = 0; i < marks.length; i++) {
+        marks[i] = parseInt(prompt("Enter marks:"));
+        sum += marks[i];
+    }
+    alert("Average of Marks: " + (sum/marks.length));
+    </script>
+</body>
+</html>
