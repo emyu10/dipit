@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shopping Simulated</title>
+</head>
+
+<body>
+    <ul>
+        <li><label><input type="checkbox" class="items" name="pen" value="15"> Pen (MVR 15)</label></li>
+        <li><label><input type="checkbox" class="items" name="pencil" value="2"> Pencil (MVR 2)</label></li>
+        <li><label><input type="checkbox" class="items" name="book" value="40"> Book (MVR 40)</label></li>
+        <li><label><input type="checkbox" class="items" name="eraser" value="1"> Eraser (MVR 1)</label></li>
+        <li><label><input type="checkbox" class="items" name="sharpener" value="5"> Sharpener (MVR 5)</label></li>
+    </ul>
+
+    <div>
+        <input type="button" onclick="calculateCart();" value="Calculate Shopping Cart">
+
+        <p id="cart-display"></p>
+    </div>
+    <script>
+    function calculateCart() {
+        var items = document.getElementsByClassName('items');
+        var total = 0;
+        for (var i = 0; i < items.length; i++) {
+            if (items[i].checked) {
+                total += parseFloat(items[i].value);
+            }
+        }
+        var cartDisplay = document.getElementById('cart-display');
+        cartDisplay.innerHTML = 'Total price of items in your cart: MVR ' + total;
+    }
+    </script>
+</body>
+</html>

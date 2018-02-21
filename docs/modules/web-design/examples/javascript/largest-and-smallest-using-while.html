@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="demo"></p>
+    <script>
+    var nums = [];
+    var num;
+    var largest;
+    var smallest;
+    do {
+        num = prompt("Enter a number other than 0");
+        if (num != 0) {
+            nums.push(num);
+            smallest = num;
+            largest = num;
+        }
+    } while (num != 0);
+
+    var i = 0;
+    var p = document.getElementById('demo');
+
+    p.innerHTML = '<h2>Numbers provided</h2>';
+    while (i < nums.length) {
+        if (nums[i] > largest) {
+            largest = nums[i];
+        }
+        if (nums[i] < smallest) {
+            smallest = nums[i];
+        }
+        p.innerHTML += '<div>' + nums[i] + '</div>';
+        i++;
+    }
+    p.innerHTML += '<div>Largest: ' + largest + '</div>';
+    p.innerHTML += '<div>Smallest: ' + smallest + '</div>';
+    </script>
+</body>
+</html>

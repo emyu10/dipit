@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Table Generator</h2>
+    <input type="number" id="rows" placeholder="rows">
+    <input type="number" id="columns" placeholder="columns">
+    <button type="button" onclick="generate();">Generate</button>
+
+    <p id="container"></p>
+    <script>
+    function generate() {
+        var r = 0, c = 0, i, j;
+        r = document.getElementById('rows').value;
+        c = document.getElementById('columns').value;
+        var table = '<table border="1" cellpadding="5" cellspacing="0">';
+        for (i = 1; i <= r; i++) {
+            table += '<tr>';
+            for (j = 1; j <= c; j++) {
+                table += '<td>Row: ' + i + ' | Column: ' + j;
+            }
+            table += '</tr>';
+        }
+        table += '</table>';
+        document.getElementById('container').innerHTML = table;
+    }
+    </script>
+</body>
+</html>

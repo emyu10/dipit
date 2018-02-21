@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="demo" style="font-size: 500px;margin: 0 auto; width: 600px;"></p>
+    <script>
+    var marks = parseInt(prompt("Enter marks: "));
+    switch (true) {
+        case marks > 75: grade = 'A'; break;
+        case marks <= 75 && marks > 60: grade = 'B'; break;
+        case marks <= 60 && marks > 45: grade = 'C'; break;
+        case marks <= 45: grade = 'D'; break;
+        default: grade = 'invalid input';
+    }
+    document.getElementById('demo').innerText = grade;
+    </script>
+</body>
+</html>
