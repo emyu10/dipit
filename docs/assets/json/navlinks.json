@@ -83,6 +83,12 @@
                 "loadInto": "page"
             },
             {
+                "id": "css-box-model",
+                "title": "CSS Box Model",
+                "link": "#/web-design/css-box-model",
+                "loadInto": "page"
+            },
+            {
                 "id": "css-animations",
                 "title": "CSS Animations",
                 "link": "#/web-design/css-animations",
