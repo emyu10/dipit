@@ -35,6 +35,12 @@
                 "loadInto": "page"
             },
             {
+                "id": "attributes",
+                "title": "Attributes",
+                "link": "#/web-design/attributes",
+                "loadInto": "page"
+            },
+            {
                 "id": "html-meta-tags",
                 "title": "HTML Meta Tags",
                 "link": "#/web-design/html-meta-tags",
