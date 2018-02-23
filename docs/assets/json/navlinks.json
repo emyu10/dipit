@@ -77,6 +77,12 @@
                 "loadInto": "page"
             },
             {
+                "id": "css-height-and-width",
+                "title": "CSS Height & Width",
+                "link": "#/web-design/css-height-and-width",
+                "loadInto": "page"
+            },
+            {
                 "id": "css-animations",
                 "title": "CSS Animations",
                 "link": "#/web-design/css-animations",
