@@ -20,8 +20,68 @@
     </pre>
 </section>
 
-<section></section>
+<section>
+    <h3>Example 1</h3>
+    <a href="modules/web-design/examples/css-padding/example-1.html" target="_blank">View Example</a>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+    div {
+        border: 1px solid black;
+        background-color: lightblue;
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;Using individual padding properties&lt;/h2&gt;
+&lt;div&gt;This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
 
+<section>
+    <h3>Example 2</h3>
+    <a href="modules/web-design/examples/css-padding/example-2.html" target="_blank">View Example</a>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+    div {
+        border: 1px solid black;
+        background-color: lightblue;
+    }
+    div.ex1 {
+        padding: 25px 50px 75px 100px;
+    }
+    div.ex2 {
+        padding: 25px 50px 75px;
+    }
+    div.ex3 {
+        padding: 25px 50px;
+    }
+    div.ex4 {
+        padding: 25px;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Using the padding shorthand property&lt;/h2&gt;
+    &lt;div class="ex1"&gt;This div element has a top padding of 25px, a right padding of 50px, a bottom padding of 75px and a left padding of 100px.&lt;/div&gt;&lt;br&gt;
+    &lt;div class="ex2"&gt;This div element has a top padding of 25px, a left and right padding of 50px, and a bottom padding of 75px.&lt;/div&gt;&lt;br&gt;
+    &lt;div class="ex3"&gt;This div element has a top and bottom padding of 25px, and a left and right padding of 50px.&lt;/div&gt;&lt;br&gt;
+    &lt;div class="ex4"&gt;This div element has a top, right, bottom and left paddding of 25px.&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
 <section>
     <a href="modules/web-design/ppts/CSS-Padding.pptx" target="_blank">Download Presentation</a>
 </section>
