@@ -89,6 +89,12 @@
                 "loadInto": "page"
             },
             {
+                "id": "css-backgrounds",
+                "title": "CSS Backgrounds",
+                "link": "#/web-design/css-backgrounds",
+                "loadInto": "page"
+            },
+            {
                 "id": "css-box-model",
                 "title": "CSS Box Model",
                 "link": "#/web-design/css-box-model",

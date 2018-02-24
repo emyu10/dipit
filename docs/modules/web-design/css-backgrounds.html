@@ -1,0 +1,270 @@
+<h2>CSS Backgrounds</h2>
+
+<section>
+    <h3>CSS Background Properties</h3>
+    <ul>
+        <li>background-color</li>
+        <li>background-image</li>
+        <li>background-repeat</li>
+        <li>background-attachment</li>
+        <li>background-position</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Background Color</h3>
+    <p>
+        The background-color property specifies the background color of an element.
+    </p>
+</section>
+
+<section>
+    <h3>Example 1</h3>
+    <a href="modules/web-design/examples/css-backgrounds/background-color.html" target="_blank">View Example</a>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+    body {
+        background-color: lightblue;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;This page has a light blue background color!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h3>Example 2</h3>
+    <a href="modules/web-design/examples/css-backgrounds/background-color-2.html" target="_blank">View Example</a>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+    h1 {
+        background-color: green;
+    }
+    div {
+        background-color: lightblue;
+    }
+    p {
+        background-color: yellow;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;CSS background-color example!&lt;/h1&gt;
+    &lt;div&gt;
+        This is a text inside a div element.
+
+        &lt;p&gt;This paragraph has its own background color.&lt;/p&gt;
+
+        We are still in the div element.
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h3>Background Image</h3>
+    <p>
+        The background-image property specifies an image to use as the background of an element.
+    </p>
+</section>
+
+<section>
+    <h3>Example 3</h3>
+    <a href="modules/web-design/examples/css-backgrounds/example-3.html" target="_blank">View Example</a>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+    body {
+        background-image: url("../../images/mr_nice_guy.jpg");
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;Strange background image...&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h3>Background Image - Repeat Horizontally or Vertically</h3>
+    <ul>
+        <li>By default, the background-image property repeats an image both horizontally and vertically.</li>
+        <li>Some images should be repeated only horizontally or vertically</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Example 4</h3>
+    <a href="modules/web-design/examples/css-backgrounds/example-4.html" target="_blank">View Example</a>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+    body{
+        background-image: url("../../images/gradient-bg.jpg");
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;Strange background image...&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h3>Example 5</h3>
+    <a href="modules/web-design/examples/css-backgrounds/example-5.html" target="_blank">View Example</a>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+    body {
+        background-image: url("../../images/gradient-bg.jpg");
+        background-repeat: repeat-x;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;Here, a backgound image is repeated only horizontally!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h3>Background Image - Set position and no-repeat</h3>
+    <ul>
+        <li>Showing the background image only once is also specified by the background-repeat property.</li>
+        <li>The position of the image is specified by the background-position property:</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Example 6 -  No Repeat</h3>
+    <a href="modules/web-design/examples/css-backgrounds/example-6.html" target="_blank">View Example</a>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+    body {
+        background-image: url("../../images/img_tree.png");
+        background-repeat: no-repeat;
+     }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;W3Schools background image example.&lt;/p&gt;
+    &lt;p&gt;The background image is only showing once, but it is disturbing the reader!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h3>Example 7 -  Set position</h3>
+    <a href="modules/web-design/examples/css-backgrounds/example-7.html" target="_blank">View Example</a>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+    body {
+        background-image: url("../../images/img_tree.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+        margin-right: 200px;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;W3Schools background no-repeat, set position example.&lt;/p&gt;
+    &lt;p&gt;
+        Now the background image is only shown once,
+        and positioned away from the text.
+    &lt;/p&gt;
+    &lt;p&gt;
+        In this example we have also added a margin on the right side,
+        so the background image will never disturb the text.
+    &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h3>Background Image - Fixed Position</h3>
+    <p>
+        To specify that the background image should be fixed (will not scroll with the rest of the page), use the background-attachment property:
+    </p>
+
+    <pre>
+    body {
+        background-image: url("img_tree.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: fixed;
+    }
+    </pre>
+</section>
+
+<section>
+    <h3>Background - Shorthand property</h3>
+    <ul>
+        <li>To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.</li>
+        <li>The shorthand property for background is background</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Example 8</h3>
+    <a href="modules/web-design/examples/css-backgrounds/example-8.html" target="_blank">View Example</a>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+    body {
+        background: #ffffff url("../../images/img_tree.png") no-repeat right top;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;
+        Now the background image is only shown once, and it is also positioned away from the text.
+    &lt;/p&gt;
+    &lt;p&gt;
+        In this example we have also added a margin on the right side,
+         so that the background image will not disturb the text.
+    &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<a href="modules/web-design/ppts/CSS-Backgrounds.pptx" target="_blank">Download Presentation</a>
