@@ -89,15 +89,21 @@
                 "loadInto": "page"
             },
             {
+                "id": "css-box-model",
+                "title": "CSS Box Model",
+                "link": "#/web-design/css-box-model",
+                "loadInto": "page"
+            },
+            {
                 "id": "css-backgrounds",
                 "title": "CSS Backgrounds",
                 "link": "#/web-design/css-backgrounds",
                 "loadInto": "page"
             },
             {
-                "id": "css-box-model",
-                "title": "CSS Box Model",
-                "link": "#/web-design/css-box-model",
+                "id": "css-borders",
+                "title": "CSS Borders",
+                "link": "#/web-design/css-borders",
                 "loadInto": "page"
             },
             {
