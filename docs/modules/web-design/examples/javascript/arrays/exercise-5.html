@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Javascript Arrays</h2>
+    <p id="demo"></p>
+
+    <script>
+    var modules = [
+        ['English', 'Abdul', 'Male'],
+        ['Science', 'Rahim', 'Kulhudhuffushi'],
+        ['Social', 'Ahmed', 'Hanimaadhoo']
+    ];
+    var demop = document.getElementById('demo');
+    var table = '';
+    table += '<table border="1" cellspacing="0" cellpadding="5">';
+    table += '<tr>';
+    table += '<th>Subject</th>';
+    table += '<th>Faculty</th>';
+    table += '<th>Island</th>';
+    table += '</tr>';
+    for (var i = 0; i < modules.length; i++) {
+        table += '<tr>';
+        for (var j = 0; j < modules[i].length; j++) {
+            table += '<td>' + modules[i][j] + '</td>';
+        }
+        table += '</tr>';
+    }
+    table += '</table>';
+    demop.innerHTML += table;
+    </script>
+</body>
+</html>
