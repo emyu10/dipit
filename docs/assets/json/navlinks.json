@@ -107,6 +107,12 @@
                 "loadInto": "page"
             },
             {
+                "id": "multi-column-layout",
+                "title": "CSS Multi-Column Layout",
+                "link": "#/web-design/multi-column-layout",
+                "loadInto": "page"
+            },
+            {
                 "id": "css-animations",
                 "title": "CSS Animations",
                 "link": "#/web-design/css-animations",

@@ -1,0 +1,245 @@
+<h2>CSS3 Multi-Column Layout</h2>
+
+<section>
+    <h3>CSS3 Multi-column Properties</h3>
+    <ul>
+        <li><tt>column-count</tt></li>
+        <li><tt>column-gap</tt></li>
+        <li><tt>column-rule-style</tt></li>
+        <li><tt>column-rule-width</tt></li>
+        <li><tt>column-rule-color</tt></li>
+        <li><tt>column-rule</tt></li>
+    </ul>
+</section>
+
+<section>
+    <h3>CSS3 Create Multiple Columns</h3>
+    <p>
+        The <tt>column-count</tt> property specifies the number of columns an element should be divided into
+    </p>
+</section>
+
+<section>
+    <h3>Example</h3>
+    <a href="modules/web-design/examples/column-layout/example-1.html" target="_blank">View Example</a>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+    .newspaper {
+        column-count: 3;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p&gt;
+        &lt;b&gt;Note:&lt;/b&gt; Internet Explorer 9, and earlier versions, does not support the column-count property.
+    &lt;/p&gt;
+
+    &lt;div class="newspaper"&gt;
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+        quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+        consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+        consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+        dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h3>CSS3 Specify the Gap Between Columns</h3>
+    <p>The <tt>column-gap</tt> property specifies the gap between the columns.</p>
+</section>
+
+<section>
+    <h3>Example</h3>
+    <a href="modules/web-design/examples/column-layout/example-2.html" target="_blank">View Example</a>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+    .newspaper {
+        column-count: 3;
+        column-gap: 40px;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p&gt;
+        &lt;b&gt;Note:&lt;/b&gt; Internet Explorer 9, and earlier versions, does not support the column-gap property.
+    &lt;/p&gt;
+
+    &lt;div class="newspaper"&gt;
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+        quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+        consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+        consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+        dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h3>CSS3 Column Rules</h3>
+    <p>The <tt>column-rule-style</tt> property specifies the style of the rule between columns:</p>
+</section>
+
+<section>
+    <h3>Example</h3>
+    <a href="modules/web-design/examples/column-layout/example-3.html" target="_blank">View Example</a>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+    .newspaper {
+        column-count: 3;
+        column-gap: 40px;
+        column-rule-style: dotted;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p&gt;
+        &lt;b&gt;Note:&lt;/b&gt; Internet Explorer 9, and earlier versions, does not support the column-rule-style property.
+    &lt;/p&gt;
+
+    &lt;div class="newspaper"&gt;
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+        quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+        consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+        consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+        dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h3>Column-rule-width</h3>
+    <p>The <tt>column-rule-width</tt> property specifies the width of the rule between columns:</p>
+</section>
+
+<section>
+    <h3>Example</h3>
+    <a href="modules/web-design/examples/column-layout/example-4.html" target="_blank">View Example</a>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+    .newspaper {
+        column-count: 3;
+        column-gap: 40px;
+        column-rule-style: dotted;
+        column-rule-width: 5px;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p&gt;
+        &lt;b&gt;Note:&lt;/b&gt; Internet Explorer 9, and earlier versions, does not support the column-rule-width property.
+    &lt;/p&gt;
+
+    &lt;div class="newspaper"&gt;
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+        quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+        consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+        consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+        dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h3>Column-rule-color</h3>
+    <p>The <tt>column-rule-color</tt> property specifies the color of the rule between columns:</p>
+</section>
+
+<section>
+    <h3>Example</h3>
+    <a href="modules/web-design/examples/column-layout/example-5.html" target="_blank">View Example</a>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+    .newspaper {
+        column-count: 3;
+        column-gap: 40px;
+        column-rule-style: dotted;
+        column-rule-width: 5px;
+        column-rule-color: blue;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p&gt;
+        &lt;b&gt;Note:&lt;/b&gt; Internet Explorer 9, and earlier versions, does not support the column-rule-color property.
+    &lt;/p&gt;
+
+    &lt;div class="newspaper"&gt;
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+        quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+        consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+        consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+        dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h3>column-rule Shorthand Property</h3>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+    .newspaper {
+        column-count: 3;
+        column-gap: 40px;
+        column-rule: 10px double lightblue;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p&gt;
+        &lt;b&gt;Note:&lt;/b&gt; Internet Explorer 9, and earlier versions, does not support the column-rule property.
+    &lt;/p&gt;
+
+    &lt;div class="newspaper"&gt;
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+        quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+        consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+        consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+        dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<a href="modules/web-design/ppts/CSS3-Multi-Column-Layout.pptx" target="_blank">Download Presentation</a>
