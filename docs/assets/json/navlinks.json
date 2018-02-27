@@ -65,6 +65,12 @@
                 "loadInto": "page"
             },
             {
+                "id": "html-table",
+                "title": "Defining an HTML Table",
+                "link": "#/web-design/html-table",
+                "loadInto": "page"
+            },
+            {
                 "id": "practice-questions-1",
                 "title": "Practice Questions 1",
                 "link": "#/web-design/practice-questions-1",
