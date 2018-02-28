@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Exercise 4</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script type="text/javascript">
+        var demop = document.getElementById('demo');
+
+        //creating car object with object literal
+        var car1 = {
+            color: 'blue',
+            model: 'C2',
+            wheels: 4
+        };
+        demop.innerHTML = "The car model is " + car1.model + " and color is " + car1.color;
+
+
+        //using the new keyword
+        var car2 = new Object();
+        car2.color = 'violet';
+        car2.model = 'C3';
+        car2.wheels = 4;
+        demop.innerHTML += "<br>The car model is " + car2.model + " and color is " + car2.color;
+
+
+        //using constructor function
+        function Car(color, model, wheels) {
+            this.color = color;
+            this.model = model;
+            this.wheels = wheels;
+        }
+        var car3 = new Car('orange', 'C4', 4);
+        demop.innerHTML += "<br>The car model is " + car3.model + " and color is " + car3.color;
+    </script>
+</body>
+</html>
