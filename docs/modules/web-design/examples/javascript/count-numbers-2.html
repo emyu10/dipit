@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Count Number Type</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var totalNumbers = parseInt(prompt("How many numbers do you want to check?"));
+
+        var aCount = 0, dCount = 0, oCount = 0, uCount = 0;
+
+        var i = 1;
+        while (i <= totalNumbers) {
+            var num = prompt("Enter number " + i + " of " + totalNumbers);
+            if (num.length == 8) {
+                var type = num[0];
+                switch (type) {
+                    case '6': aCount++; break;
+                    case '7': dCount++; break;
+                    case '9': oCount++; break;
+                    default: uCount++;
+                }
+                i++;
+            } else {
+                continue;
+            }
+        }
+
+        document.write('<div>Airtel: ' + aCount + '</div>');
+        document.write('<div>Dhiraagu: ' + dCount + '</div>');
+        document.write('<div>Ooredoo: ' + oCount + '</div>');
+        document.write('<div>Unknown: ' + uCount + '</div>');
+    </script>
+</body>
+</html>
