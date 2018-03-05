@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Google Maps</title>
+
+    <style media="screen">
+        html, body {
+            width: 100%;
+            height: 100%;
+            padding: 10%;
+        }
+        #map_canvas {
+            height: 90%;
+            width: 90%;
+        }
+    </style>
+    <script src="https://maps.google.com/maps/api/js?sensor=false" charset="utf-8"></script>
+    <script type="text/javascript">
+        //check support for geolocation in the Browser
+        if (navigator.geolocation) {
+            //location position and invoke function
+            navigator.geolocation.getCurrentPosition((position) => {
+                var my_lat = position.coords.latitude;
+                var my_lng = position.coords.longitude;
+                var div_info = document.getElementById('user_location');
+                div_info.innerHTML = '<h1>Latitude is: ' + my_lat + " and Longitude is " + my_lng + '</h1>';
+
+                //load google Maps
+                var latLng = new google.maps.LatLng(my_lat, my_lng);
+                var myOptions = {
+                    zoom: 15,
+                    center: latLng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                //creates the map object
+                var map = new google.maps.Map(document.getElementById('map_canvas'), myOptions);
+
+                //displays icon on the located position
+                var marker = new google.maps.Marker({
+                    position: latLng,
+                    map: map,
+                    title: 'User Location'
+                });
+            }, (error) => {
+                alert('Error!');
+            });
+        } else {
+            alert("Geolocation is not enabled in your browser");
+        }
+    </script>
+</head>
+<body>
+    <div id="map_canvas"></div>
+    <div id="user_location"></div>
+</body>
+</html>

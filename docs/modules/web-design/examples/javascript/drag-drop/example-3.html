@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Drag and Drop API</title>
+    <script type="text/javascript">
+        function drag_image(event) {
+            console.log('drage started');
+            event.dataTransfer.setData("image", event.target.id);
+        }
+
+        function allow_drop(event) {
+            console.log('drop allowed');
+            event.preventDefault();
+        }
+
+        function drop_image(event) {
+            event.preventDefault();
+            console.log('image dropped');
+            var data = event.dataTransfer.getData("image");
+            // console.log(data);
+            event.target.innerHTML += document.getElementById(data).outerHTML;
+            // event.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+<body>
+    <div id="div1" style="border: blue 2px solid; height: 125px; width: 75px; padding: 10px;">
+        <img src="image.jpg" height="75" width="75" id="image1" draggable="true" ondragstart="drag_image(event)" />
+    </div>
+    <br>
+    <div id="div2" style="border: red 2px solid; height: 125px; width: 75px; padding: 10px;" ondrop="drop_image(event);" ondragover="allow_drop(event);">
+
+    </div>
+</body>
+</html>

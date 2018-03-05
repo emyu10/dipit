@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Draw Text on Canvas</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="500" height="500" style="border: 1px solid #d3d3d3;"></canvas>
+
+    <script type="text/javascript">
+        var c = document.getElementById('myCanvas');
+        var ctx = c.getContext('2d');
+        ctx.font = "30px Arial";
+        ctx.strokeStyle = "red";
+        ctx.strokeText("Hello World", 20, 50);
+
+    </script>
+</body>
+</html>
