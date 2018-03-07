@@ -1,0 +1,20 @@
+/* CSS Document */
+body {
+	margin:0;
+	padding:0;
+}
+h1 {
+	color: #609;
+}
+h2 {
+	background-color: #999;
+	color: #606;
+}
+
+p {
+	margin: 20px;
+	background-color:#3FF;
+	color: #930;
+	font-family:Verdana, Geneva, sans-serif;
+	padding: 50px;
+}
