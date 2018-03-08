@@ -35,6 +35,12 @@
                 "loadInto": "page"
             },
             {
+                "id": "mobile-benefits",
+                "title": "Benefits of HTML 5 for Mobile Development",
+                "link": "#/web-design/mobile-benefits",
+                "loadInto": "page"
+            },
+            {
                 "id": "attributes",
                 "title": "Attributes",
                 "link": "#/web-design/attributes",
@@ -44,6 +50,12 @@
                 "id": "html-meta-tags",
                 "title": "HTML Meta Tags",
                 "link": "#/web-design/html-meta-tags",
+                "loadInto": "page"
+            },
+            {
+                "id": "html-entities",
+                "title": "HTML Entities",
+                "link": "#/web-design/html-entities",
                 "loadInto": "page"
             },
             {
