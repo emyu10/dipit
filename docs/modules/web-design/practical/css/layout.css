@@ -1,0 +1,89 @@
+@font-face {
+  font-family: CinzelDecorativeBlack;
+  src: url(../fonts/Cinzel_Decorative/CinzelDecorative-Black.ttf);
+}
+@font-face {
+  font-family: CinzelDecorativeBold;
+  src: url(../fonts/Cinzel_Decorative/CinzelDecorative-Bold.ttf);
+}
+@font-face {
+  font-family: CinzelDecorativeRegular;
+  src: url(../fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf);
+}
+@font-face {
+  font-family: KellySlab;
+  src: url(../fonts/Kelly_Slab/KellySlab-Regular.ttf);
+}
+body {
+  background: #000;
+  background-image: url('../images/logos/body-bg.png');
+  margin: 0;
+  padding: 0;
+  font-family: KellySlab, serif;
+  color: #fff;
+}
+* {
+  font-family: KellySlab, serif;
+}
+header {
+  background: #455A64;
+  min-height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+header #logo {
+  margin-left: 20px;
+  margin-right: 5px;
+}
+header #logo img {
+  display: inline;
+  vertical-align: middle;
+}
+header #logo span {
+  font-size: 20pt;
+  font-family: CinzelDecorativeBold;
+  color: #FF5252;
+  vertical-align: middle;
+}
+header nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-left: 20px;
+}
+header nav a {
+  padding: 15px 10px 3px 10px;
+  background: #212121;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  color: #CFD8DC;
+  border-right: #BDBDBD thin solid;
+}
+header nav a span {
+  display: inline;
+  vertical-align: middle;
+}
+header nav a.active {
+  color: #FF5252;
+}
+header nav a:hover {
+  color: #CFD8DC;
+  background: #FF5252;
+}
+header nav a:last-of-type {
+  border: none;
+}
+header .search-form {
+  text-align: right;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+header .search-form input {
+  margin: 5px;
+  padding: 12px;
+  border: #BDBDBD 2px solid;
+  color: #FF5252;
+}
+header .search-form input:focus {
+  border: #FF5252 2px solid;
+}
