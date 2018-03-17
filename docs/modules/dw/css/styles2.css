@@ -1,0 +1,14 @@
+/* CSS Document */
+
+a {
+	text-decoration: none;
+	color: #06F;
+}
+
+#gridded {
+	display:grid;
+	grid-template-columns:1fr 1fr;
+}
+#gridded img {
+	display:block;
+}
