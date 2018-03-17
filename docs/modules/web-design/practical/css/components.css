@@ -1,0 +1,23 @@
+.movie-box {
+  display: block;
+}
+.movie-box img {
+  display: block;
+}
+.movie-box .title {
+  display: block;
+  padding: 10px;
+}
+.index-two-column {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+#new-movie-releases {
+  background-color: rgba(96, 125, 139, 0.9);
+  padding: 20px;
+  margin-top: 20px;
+}
+#new-movie-releases div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

@@ -1,2 +1,29 @@
 //out: components.css
 @import "colors.less";
+
+.movie-box {
+    display: block;
+    img {
+        display: block;
+    }
+    .title {
+        display: block;
+        padding: 10px;
+    }
+}
+
+
+.index-two-column {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#new-movie-releases {
+    background-color: rgba(@color-default-primary-r, @color-default-primary-g, @color-default-primary-b, 0.9);
+    padding: 20px;
+    margin-top: 20px;
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

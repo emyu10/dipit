@@ -1,22 +1,22 @@
-function Movie() {
-    this.title = '';
-    this.rating = '';
-    this.setTitle = function (title) {
-        this.title = title;
-    };
+function Movie(title, year, storyline, coverUrl) {
+    this.title = title;
+    this.year = year;
+    this.cast = [];
+    this.storyline = storyline;
+    this.coverUrl = coverUrl;
+
+    this.setCast = function (cast) {
+        this.cast = cast;
+    }
+
+    this.addCast = function (cast) {
+        this.cast.push(cast);
+    }
 }
 
-function Celebrity() {
-    this.name = '';
-    this.age = 0;
-    this.photoUrl = '';
-    this.setName = function (name) {
-        this.name = name;
-    };
-    this.setAge = function (age) {
-        this.age = age;
-    };
-    this.setPhotoUrl = function (url) {
-        this.photoUrl = url;
-    };
+function Celebrity(name, roles, bio, dob, photoUrl) {
+    this.name = name;
+    this.roles = roles;
+    this.dob = new Date(dob);
+    this.photoUrl = photoUrl;
 }

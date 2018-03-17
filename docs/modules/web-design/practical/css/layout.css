@@ -87,3 +87,6 @@ header .search-form input {
 header .search-form input:focus {
   border: #FF5252 2px solid;
 }
+#wrapper {
+  margin: 0 20px;
+}
