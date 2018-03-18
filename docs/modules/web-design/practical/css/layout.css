@@ -91,6 +91,10 @@ header .search-form input:focus {
 #wrapper {
   margin: 0 20px 55px 20px;
 }
+.right-pane {
+  padding-left: 10px;
+  padding-top: 10px;
+}
 footer {
   background: #CFD8DC;
   color: #212121;

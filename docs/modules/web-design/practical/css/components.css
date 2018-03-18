@@ -2,24 +2,14 @@
   width: 100%;
   border-spacing: 5px;
 }
+.light-grey-background {
+  background-color: rgba(96, 125, 139, 0.9);
+  padding: 20px;
+  margin-top: 20px;
+}
 a {
   text-decoration: none;
   color: #FF5252;
-}
-a.readmore {
-  color: #eb0000;
-  background-color: #728f9d;
-  display: inline-block;
-  padding: 2px;
-}
-h1,
-h2,
-h3 {
-  color: #520000;
-}
-p {
-  color: #141414;
-  line-height: 1.5em;
 }
 .movie-box {
   width: 100%;
@@ -39,6 +29,24 @@ p {
 .movie-box .title:hover {
   color: #FF5252;
 }
+.movie-list-item {
+  background: #000;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-left: 10px;
+  overflow: auto;
+}
+.movie-list-item img {
+  display: block;
+  width: 50px;
+  float: left;
+  margin-right: 10px;
+}
+.movie-list-item div p:first-child {
+  font-weight: bold;
+  color: #FF5252;
+}
 .index-two-column {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -47,14 +55,47 @@ p {
   margin: 20px 0 0 20px;
   background-color: rgba(82, 0, 0, 0.9);
 }
-#new-movie-releases,
-#latest-news {
+.movie-thumbs {
   background-color: rgba(96, 125, 139, 0.9);
   padding: 20px;
   margin-top: 20px;
 }
-#new-movie-releases table,
-#latest-news table {
+.movie-thumbs table {
   width: 100%;
   border-spacing: 5px;
+}
+.movie-thumbs h1,
+.movie-thumbs h2,
+.movie-thumbs h3 {
+  color: #520000;
+}
+.news {
+  background-color: rgba(96, 125, 139, 0.9);
+  padding: 20px;
+  margin-top: 20px;
+}
+.news div {
+  overflow: auto;
+}
+.news div p img {
+  float: left;
+  margin-right: 10px;
+}
+.news a.readmore {
+  color: #eb0000;
+  background-color: #728f9d;
+  display: inline-block;
+  padding: 2px;
+}
+.news h1,
+.news h2,
+.news h3 {
+  color: #520000;
+}
+.news p {
+  color: #141414;
+  line-height: 1.5em;
+}
+.movie-list {
+  margin-bottom: 50px;
 }

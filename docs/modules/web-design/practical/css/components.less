@@ -6,19 +6,7 @@ a {
     text-decoration: none;
     color: @color-accent;
 }
-a.readmore {
-    color: darken(@color-accent, 20%);
-    background-color: lighten(@color-dark-primary, 20%);
-    display: inline-block;
-    padding: 2px;
-}
-h1, h2, h3 {
-    color: darken(@color-accent, 50%);
-}
-p {
-    color: darken(@color-primary-text, 5%);
-    line-height: 1.5em;
-}
+
 .movie-box {
     width: 100%;
     background: darken(@color-primary-text, 10%);
@@ -37,7 +25,26 @@ p {
         }
     }
 }
-
+.movie-list-item {
+    background: @color-black;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+    overflow: auto;
+    img {
+        display: block;
+        width: 50px;
+        float: left;
+        margin-right: 10px;
+    }
+    div {
+        p:first-child {
+            font-weight: bold;
+            color: @color-accent;
+        }
+    }
+}
 
 .index-two-column {
     display: grid;
@@ -49,11 +56,41 @@ p {
     }
 }
 
-#new-movie-releases, #latest-news {
-    background-color: rgba(@color-default-primary-r, @color-default-primary-g, @color-default-primary-b, 0.9);
-    padding: 20px;
-    margin-top: 20px;
+.movie-thumbs {
+    .light-grey-background;
     table {
-        .grid-table
+        .grid-table;
     }
+    h1, h2, h3 {
+        color: darken(@color-accent, 50%);
+    }
+}
+.news {
+    .light-grey-background;
+    div {
+        overflow: auto;
+        p {
+            img {
+                float: left;
+                margin-right: 10px;
+            }
+        }
+    }
+    a.readmore {
+        color: darken(@color-accent, 20%);
+        background-color: lighten(@color-dark-primary, 20%);
+        display: inline-block;
+        padding: 2px;
+    }
+    h1, h2, h3 {
+        color: darken(@color-accent, 50%);
+    }
+    p {
+        color: darken(@color-primary-text, 5%);
+        line-height: 1.5em;
+    }
+}
+
+.movie-list {
+    margin-bottom: 50px;
 }

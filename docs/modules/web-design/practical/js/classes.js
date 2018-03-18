@@ -21,16 +21,59 @@ function Celebrity(name, roles, bio, dob, photoUrl) {
     this.photoUrl = photoUrl;
 }
 
-function MovieDiv(movie) {
-    this.movie = movie;
-    this.showDetails = function () {
-        alert('test');
+function MovieDiv(mov) {
+    var movie = mov;
+
+    var image = document.createElement('img');
+    image.setAttribute('src', movie.coverUrl);
+    image.setAttribute('alt', movie.title + ' image');
+
+    var imageDiv = document.createElement('div');
+    imageDiv.setAttribute('class', 'image');
+    imageDiv.appendChild(image);
+
+    var titleDiv = document.createElement('div');
+    titleDiv.setAttribute('class', 'title');
+    titleDiv.innerHTML = movie.title + ' [' + movie.year + ']';
+
+    var movieBox = document.createElement('div');
+    movieBox.setAttribute('class', 'movie-box');
+    movieBox.appendChild(imageDiv);
+    movieBox.appendChild(titleDiv);
+    /*
+    <div class="movie-list-item">
+        <img src="images/movies/Vafaatheri_Kehiveriyaa.png">
+        <div>
+            <p>Vafaatheri Kehiveriyaa</p>
+            <p>some text ...</p>
+        </div>
+    </div>
+    */
+
+    var titleP = document.createElement('p');
+    titleP.innerHTML = movie.title;
+
+    var summaryP = document.createElement('p');
+    summaryP.innerHTML = movie.storyline.substring(0, 30) + ' ...';
+
+    var detailsDiv = document.createElement('div');
+    detailsDiv.appendChild(titleP);
+    detailsDiv.appendChild(summaryP);
+
+    var listImage = document.createElement('img');
+    listImage.setAttribute('src', movie.coverUrl);
+    listImage.setAttribute('alt', movie.title + ' image');
+
+    var listItemDiv = document.createElement('div');
+    listItemDiv.setAttribute('class', 'movie-list-item');
+    listItemDiv.appendChild(listImage);
+    listItemDiv.appendChild(detailsDiv);
+
+    this.thumbHtml = function () {
+        return movieBox.outerHTML;
     };
-    this.html = function () {
-        var html = '<div class="movie-box">';
-        html += '<div class="image"><img src="' + this.movie.coverUrl + '" alt="' + this.movie.title + '"></div>';
-        html += '<div class="title">' + this.movie.title + ' [' + this.movie.year + ']</div>';
-        html += '</div>';
-        return html;
-    };
+
+    this.listItemHtml = function () {
+        return listItemDiv.outerHTML;
+    }
 }
