@@ -1,23 +1,60 @@
-.movie-box {
-  display: block;
+.grid-table {
+  width: 100%;
+  border-spacing: 5px;
 }
-.movie-box img {
-  display: block;
+a {
+  text-decoration: none;
+  color: #FF5252;
+}
+a.readmore {
+  color: #eb0000;
+  background-color: #728f9d;
+  display: inline-block;
+  padding: 2px;
+}
+h1,
+h2,
+h3 {
+  color: #520000;
+}
+p {
+  color: #141414;
+  line-height: 1.5em;
+}
+.movie-box {
+  width: 100%;
+  background: #080808;
+}
+.movie-box .image {
+  border-bottom: #FF5252 2px solid;
+}
+.movie-box .image img {
+  width: 100%;
 }
 .movie-box .title {
-  display: block;
   padding: 10px;
+  font-size: 90%;
+  cursor: pointer;
+}
+.movie-box .title:hover {
+  color: #FF5252;
 }
 .index-two-column {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
-#new-movie-releases {
+.index-two-column .right-pane {
+  margin: 20px 0 0 20px;
+  background-color: rgba(82, 0, 0, 0.9);
+}
+#new-movie-releases,
+#latest-news {
   background-color: rgba(96, 125, 139, 0.9);
   padding: 20px;
   margin-top: 20px;
 }
-#new-movie-releases div {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+#new-movie-releases table,
+#latest-news table {
+  width: 100%;
+  border-spacing: 5px;
 }

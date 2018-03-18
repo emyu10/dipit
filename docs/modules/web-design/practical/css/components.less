@@ -1,14 +1,40 @@
 //out: components.css
 @import "colors.less";
+@import "helpers.less";
 
+a {
+    text-decoration: none;
+    color: @color-accent;
+}
+a.readmore {
+    color: darken(@color-accent, 20%);
+    background-color: lighten(@color-dark-primary, 20%);
+    display: inline-block;
+    padding: 2px;
+}
+h1, h2, h3 {
+    color: darken(@color-accent, 50%);
+}
+p {
+    color: darken(@color-primary-text, 5%);
+    line-height: 1.5em;
+}
 .movie-box {
-    display: block;
-    img {
-        display: block;
+    width: 100%;
+    background: darken(@color-primary-text, 10%);
+    .image {
+        border-bottom: @color-accent 2px solid;
+        img {
+            width: 100%;
+        }
     }
     .title {
-        display: block;
         padding: 10px;
+        font-size: 90%;
+        cursor: pointer;
+        &:hover {
+            color: @color-accent;
+        }
     }
 }
 
@@ -16,14 +42,18 @@
 .index-two-column {
     display: grid;
     grid-template-columns: 2fr 1fr;
+
+    .right-pane {
+        margin: 20px 0 0 20px;
+        background-color: darken(rgba(@color-accent-r, @color-accent-g, @color-accent-b, 0.9), 50%);
+    }
 }
 
-#new-movie-releases {
+#new-movie-releases, #latest-news {
     background-color: rgba(@color-default-primary-r, @color-default-primary-g, @color-default-primary-b, 0.9);
     padding: 20px;
     margin-top: 20px;
-    div {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+    table {
+        .grid-table
     }
 }
