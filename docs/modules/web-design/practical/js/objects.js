@@ -60,3 +60,55 @@ var celebAhmedSunie = new Celebrity('Ahmed Sunie', 'Ahmed Suie is an actor, TV p
 var celebAminathRishfa = new Celebrity('Aminath Rishfa', 'Aminath Rishfa is an actress, known for Hahdhu (2017).', '1986-01-10', 'images/celebs/rishfa.jpeg');
 var celebAishathRishmy = new Celebrity('Aishath Rishmy', 'Aishath Rishmy is a popular actress, dancer, model and director coming from an entertainment background.', '1985-05-28', 'images/celebs/rishmy.jpg');
 var celebAliSeezan = new Celebrity('Ali Seezan', 'Ali Seezan (born 6 February 1977) is a Maldivian actor. He has established a career in Maldives Film Industry and is a recipient of two National Film Awards.', '1977-02-06', 'images/celebs/seezan.jpg');
+
+var celeb0 = new Celebrity('Maxine Toy IV', 'Repudiandae harum placeat doloremque quam eius quisquam. Deserunt veniam incidunt ab dolor. Ad in esse beatae. Eaque voluptatem rerum rerum.', '2006-07-29', 'images/celebs/celeb0.jpg');
+var celeb1 = new Celebrity('Miss Hertha Sipes', 'Impedit sequi vel delectus numquam eligendi sit. Accusamus omnis officia qui repudiandae. Est voluptas enim nemo quisquam iusto.', '2015-06-07', 'images/celebs/celeb1.jpg');
+var celeb2 = new Celebrity('Ernesto Carroll', 'Sit aut rerum ut ipsa voluptas. Deleniti possimus ipsum ut necessitatibus nam earum nemo quaerat. Quia quam enim sit. Laudantium voluptatem in accusamus mollitia quisquam sit architecto ut.', '1985-03-26', 'images/celebs/celeb2.jpg');
+var celeb3 = new Celebrity('Rosemary Doyle', 'Quisquam quis sit perspiciatis ab illum placeat cumque sunt. Voluptatem sint deserunt est sed recusandae. Quia sunt temporibus quam at. Maiores eos at est atque quia vel ex.', '1999-06-10', 'images/celebs/celeb3.jpg');
+var celeb4 = new Celebrity('Dominic Reilly', 'Ad fugit aut nam doloremque. Exercitationem quos nihil ea deserunt. Error sit et delectus explicabo voluptatibus id quo et.', '1992-05-06', 'images/celebs/celeb4.jpg');
+var celeb5 = new Celebrity('Grayce Stanton', 'Accusantium sit quis dolorum voluptas excepturi magni est. Non reprehenderit ex dolor laudantium mollitia ea.', '1990-06-09', 'images/celebs/celeb5.jpg');
+var celeb6 = new Celebrity('Prof. Sid Haley III', 'At dolor non enim qui ratione architecto nostrum. Suscipit possimus reprehenderit dolor omnis sed. Distinctio ut sint voluptatibus eius.', '1992-04-08', 'images/celebs/celeb6.jpg');
+var celeb7 = new Celebrity('Rowan Labadie II', 'Doloremque iste voluptatum et aut cumque repellendus velit. Dicta occaecati architecto blanditiis aut et quam. Enim et et ipsam ducimus consequuntur. Veritatis deserunt repellat at consequatur.', '1978-10-21', 'images/celebs/celeb7.jpg');
+var celeb8 = new Celebrity('Brant Boyle', 'Facere consequuntur magni consequuntur ut ipsum necessitatibus doloremque. Rerum ullam quam ut et expedita. Nihil repellendus architecto illo doloribus necessitatibus et eligendi.', '1984-03-17', 'images/celebs/celeb8.jpg');
+var celeb9 = new Celebrity('Alayna Runolfsdottir', 'Explicabo consequuntur est id eaque facilis. Illo vel quia delectus est praesentium nisi inventore. Minima ea quia debitis atque iste facere placeat. Omnis culpa dicta hic odit aut quis.', '1994-12-21', 'images/celebs/celeb9.jpg');
+var celeb10 = new Celebrity('Elna Turcotte', 'Qui autem et deserunt. Est voluptas et vitae ut impedit molestiae voluptatibus. Autem possimus sunt nostrum impedit deleniti.', '1972-06-07', 'images/celebs/celeb10.jpg');
+var celeb11 = new Celebrity('Dr. Royce Kassulke IV', 'Excepturi autem aut nihil voluptatum. Impedit mollitia a repellendus nemo ea placeat voluptatem. Dolorum consequatur ratione neque ea rerum.', '2014-11-11', 'images/celebs/celeb11.jpg');
+var celeb12 = new Celebrity('Demario Cole', 'Enim minima modi non rem laborum placeat. Consequuntur dolore deserunt iste nobis doloremque rerum ut. Et cumque consequatur id omnis asperiores in. Mollitia est dignissimos possimus.', '2013-03-27', 'images/celebs/celeb12.jpg');
+var celeb13 = new Celebrity('Laney Kuhic', 'Cum voluptatibus laborum earum a omnis iure quibusdam. Qui voluptas non rerum pariatur eos impedit autem. Rerum magnam cupiditate blanditiis aspernatur.', '2000-07-12', 'images/celebs/celeb13.jpg');
+var celeb14 = new Celebrity('Fritz Tremblay', 'Dolor ut nam temporibus sed quia. Delectus et deleniti et eligendi. Rem quidem unde molestias. Sint neque iure maiores aut nostrum ut soluta.', '2015-01-31', 'images/celebs/celeb14.jpg');
+var celeb15 = new Celebrity('Curt Kub', 'Delectus in ducimus placeat accusamus earum magni exercitationem. Officia corrupti tempore repellat illum. Quo quas dolores provident.', '1972-12-08', 'images/celebs/celeb15.jpg');
+var celeb16 = new Celebrity('Mrs. Beth Lehner II', 'Sapiente commodi reiciendis alias eos rem porro. Sit aliquam dolores praesentium non maxime. Dolor sint voluptatem asperiores natus magnam sint. Quia explicabo est tenetur rerum delectus consequatur.', '1970-07-05', 'images/celebs/celeb16.jpg');
+var celeb17 = new Celebrity('Mallie Zulauf', 'Consequatur facilis est dolor ut aliquam est id quidem. Quaerat ratione sapiente maiores laborum quisquam iusto.', '1988-04-15', 'images/celebs/celeb17.jpg');
+var celeb18 = new Celebrity('Bernadette Boehm', 'Soluta omnis ut labore tenetur dignissimos neque. Animi dolore voluptatibus ut ut. Qui corrupti corporis et iure.', '2009-09-28', 'images/celebs/celeb18.jpg');
+var celeb19 = new Celebrity('Cordelia Hudson V', 'Sunt nulla vitae non aliquam qui sit. Et fuga ducimus mollitia enim ut pariatur sunt. Sed in mollitia eos nisi cum.', '1974-07-12', 'images/celebs/celeb19.jpg');
+
+var allCelebrities = [
+    celebAbullaMuaz,
+    celebAhmedAzmeel,
+    celebAhmedNashith,
+    celebAhmedNimal,
+    celebAhmedSunie,
+    celebAminathRishfa,
+    celebAishathRishmy,
+    celebAliSeezan,
+    celeb0,
+    celeb1,
+    celeb2,
+    celeb3,
+    celeb4,
+    celeb5,
+    celeb6,
+    celeb7,
+    celeb8,
+    celeb9,
+    celeb10,
+    celeb11,
+    celeb12,
+    celeb13,
+    celeb14,
+    celeb15,
+    celeb16,
+    celeb17,
+    celeb18,
+    celeb19
+];

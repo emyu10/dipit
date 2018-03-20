@@ -173,8 +173,12 @@ a {
   width: 200px;
   float: left;
   margin-right: 10px;
+  margin-bottom: 10px;
   background: #000;
   color: #fff;
+}
+.celeb-box div {
+  border-bottom: 2px solid #FF5252;
 }
 .celeb-box div img {
   width: 200px;
@@ -221,4 +225,33 @@ a {
 #celebs-container .celeb-thumbs h2,
 #celebs-container .celeb-thumbs h3 {
   color: #520000;
+}
+.album {
+  margin-top: 20px;
+  padding: 20px;
+  background: #455A64;
+}
+.album h2 {
+  color: #520000;
+}
+.album .photos {
+  overflow: auto;
+}
+.gallery-image {
+  height: 300px;
+  width: 300px;
+  background: #000;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.gallery-image img {
+  width: 100%;
+  height: 240px;
+  display: block;
+}
+.gallery-image .caption {
+  padding: 10px;
+  height: 10px;
+  color: #fff;
 }

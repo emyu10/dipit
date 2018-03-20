@@ -22,7 +22,7 @@ function Movie(title, year, storyline, coverUrl) {
         };
         var html = '<div class="movie-box">';
         html += '<div class="image"><img src="' + this.coverUrl + '" alt="' + this.title + ' image"></div>';
-        html += '<div class="title" onclick="displayMovieDetails(' + mov + ')">' + this.title + ' [' + this.year + ']</div>';
+        html += '<div class="title">' + this.title + ' [' + this.year + ']</div>';
         html += '</div>';
         return html;
     };
@@ -44,19 +44,14 @@ function Celebrity(name, bio, dob, photoUrl) {
     this.bio = bio;
     this.dob = new Date(dob);
     this.photoUrl = photoUrl;
-}
-
-function closeMovieDetails() {
-    var detailsDiv = document.getElementById('movie-details');
-    detailsDiv.style.display = 'none';
-}
-
-function displayMovieDetails(movie) {
-    console.log(movie);
-    // var detailsDiv = document.getElementById('movie-details');
-    // var detailsTitleH = document.getElementById("movie-details-title");
-    // var detailsCoverDiv = document.getElementById("movie-details-cover");
-    // var detailsStoryLineP = document.getElementById("movie-details-storyline");
-    // detailsTitleH.innerText = movie.title + ' [' + movie.year + ']';
-    // detailsDiv.style.display = 'none';
+    this.boxHtml = function () {
+        var html = '<div class="celeb-box">';
+        html += '<div><img src="' + this.photoUrl + '"></div>';
+        html += '<div class="details">';
+        html += '<p>' + this.name + '</p>';
+        html += '<p>Birthday: ' + this.dob.getDate() + '/' + this.dob.getMonth() + '/' + this.dob.getYear() + '</p>';
+        html += '</div>';
+        html += '</div>';
+        return html;
+    };
 }
