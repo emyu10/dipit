@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="mentertainment maldives entertainment industry celebrities movies dhivehi">
+    <title>MENTERTAIN</title>
+
+    <link rel="icon" href="images/logos/favicon.ico">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <div id="movie-details">
+        <div class="wrapper">
+            <div class="bar"><span class="close" onclick="closeMovieDetails();">CLOSE</span></div>
+            <div class="content">
+                <h2 id="movie-details-title"></h2>
+                <div id="movie-details-cover"></div>
+                <p id="movie-details-storyline"></p>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div id="logo">
+            <img src="images/logos/main.png" alt="Main Logo">
+            <span>MENTERTAIN</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="celebrities.html">Celebrities</a>
+            <a href="news.html">News & Gossip</a>
+            <a href="movies.html" class="active">Movies</a>
+            <a href="galleries.html">Galleries</a>
+        </nav>
+
+        <div class="search-form">
+            <input type="text" id="searchq" placeholder="search ...">
+        </div>
+    </header>
+
+    <div id="wrapper">
+        <div id="all-movies">
+            <div class="letters">
+                <ul id="movie-search-links">
+                    <li>ALL</li>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                    <li>D</li>
+                    <li>E</li>
+                    <li>F</li>
+                    <li>G</li>
+                    <li>H</li>
+                    <li>I</li>
+                    <li>J</li>
+                    <li>K</li>
+                    <li>L</li>
+                    <li>M</li>
+                    <li>N</li>
+                    <li>O</li>
+                    <li>P</li>
+                    <li>Q</li>
+                    <li>R</li>
+                    <li>S</li>
+                    <li>T</li>
+                    <li>U</li>
+                    <li>V</li>
+                    <li>W</li>
+                    <li>X</li>
+                    <li>Y</li>
+                    <li>Z</li>
+                </ul>
+            </div>
+            <div class="movie-thumbs">
+                <h1 id="search-letter">All Movies</h1>
+                <div id="search-results">Loading ...</div>
+            </div>
+        </div>
+
+        <section class="movie-thumbs">
+            <h2>Now In Theatres</h2>
+            <div id="now-showing">Loading ...</div>
+        </section>
+
+        <section class="movie-thumbs">
+            <h2>Releasing Soon</h2>
+            <div id="releasing-soon">Loading ...</div>
+        </section>
+    </div>
+
+    <footer>Copyright (c) 2017 <img src="images/logos/main.png" style="width: 20px;"> <span style="font-family: CinzelDecorativeBold;">MENTERTAIN</span> TEAM All Rights Reserved.</footer>
+
+    <script type="text/javascript" src="js/classes.js"></script>
+    <script type="text/javascript" src="js/objects.js"></script>
+    <script type="text/javascript" src="js/movies.js"></script>
+</body>
+</html>

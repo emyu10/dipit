@@ -17,9 +17,11 @@ a {
         }
     }
     .title {
+        height: 2em;
         padding: 10px;
-        font-size: 90%;
+        font-size: 1em;
         cursor: pointer;
+        overflow: hidden;
         &:hover {
             color: @color-accent;
         }
@@ -93,4 +95,63 @@ a {
 
 .movie-list {
     margin-bottom: 50px;
+}
+
+#all-movies {
+    display: grid;
+    grid-template-columns: 70px auto;
+    margin-top: 20px;
+    background-color: darken(rgba(@color-accent-r, @color-accent-g, @color-accent-b, 0.9), 50%);
+    .letters {
+        width: 50px;
+        padding: 10px;
+        font-size: 16pt;
+        font-weight: bold;
+        text-align: center;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            li {
+                padding: 0;
+                margin: 0 0 10px 0;
+                cursor: pointer;
+                &:hover {
+                    color: @color-accent;
+                }
+            }
+        }
+    }
+    .movie-thumbs {
+        .movie-thumbs;
+        margin: 0;
+    }
+}
+
+#movie-details {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: darken(rgba(@color-accent-r, @color-accent-g, @color-accent-b, 0.9), 60%);
+    z-index: 5;
+    display: none;
+    .wrapper {
+        width: 1024px;
+        margin: 20px auto;
+        background: lighten(@color-black, 10%);
+        .bar {
+            text-align: right;
+            padding: 1px;
+            .close {
+                background: @color-accent;
+                padding: 5px;
+                cursor: pointer;
+            }
+        }
+        .content {
+            padding: 20px;
+        }
+    }
 }

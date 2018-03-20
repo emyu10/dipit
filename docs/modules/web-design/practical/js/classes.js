@@ -7,73 +7,56 @@ function Movie(title, year, storyline, coverUrl) {
 
     this.setCast = function (cast) {
         this.cast = cast;
-    }
+    };
 
     this.addCast = function (cast) {
         this.cast.push(cast);
-    }
+    };
+
+    this.thumbHtml = function () {
+        var mov = {
+            title: this.title,
+            year: this.year,
+            storyline: this.storyline,
+            coverUrl: this.coverUrl
+        };
+        var html = '<div class="movie-box">';
+        html += '<div class="image"><img src="' + this.coverUrl + '" alt="' + this.title + ' image"></div>';
+        html += '<div class="title" onclick="displayMovieDetails(' + mov + ')">' + this.title + ' [' + this.year + ']</div>';
+        html += '</div>';
+        return html;
+    };
+
+    this.listItemHtml = function () {
+        var html = '<div class="movie-list-item">';
+        html += '<img src="' + this.coverUrl + '">';
+        html += '<div>';
+        html += '<p>' + this.title + '</p>';
+        html += '<p>' + this.storyline.substring(0, 30) + ' ...</p>';
+        html += '</div>';
+        html += '</div>';
+        return html;
+    };
 }
 
-function Celebrity(name, roles, bio, dob, photoUrl) {
+function Celebrity(name, bio, dob, photoUrl) {
     this.name = name;
-    this.roles = roles;
+    this.bio = bio;
     this.dob = new Date(dob);
     this.photoUrl = photoUrl;
 }
 
-function MovieDiv(mov) {
-    var movie = mov;
+function closeMovieDetails() {
+    var detailsDiv = document.getElementById('movie-details');
+    detailsDiv.style.display = 'none';
+}
 
-    var image = document.createElement('img');
-    image.setAttribute('src', movie.coverUrl);
-    image.setAttribute('alt', movie.title + ' image');
-
-    var imageDiv = document.createElement('div');
-    imageDiv.setAttribute('class', 'image');
-    imageDiv.appendChild(image);
-
-    var titleDiv = document.createElement('div');
-    titleDiv.setAttribute('class', 'title');
-    titleDiv.innerHTML = movie.title + ' [' + movie.year + ']';
-
-    var movieBox = document.createElement('div');
-    movieBox.setAttribute('class', 'movie-box');
-    movieBox.appendChild(imageDiv);
-    movieBox.appendChild(titleDiv);
-    /*
-    <div class="movie-list-item">
-        <img src="images/movies/Vafaatheri_Kehiveriyaa.png">
-        <div>
-            <p>Vafaatheri Kehiveriyaa</p>
-            <p>some text ...</p>
-        </div>
-    </div>
-    */
-
-    var titleP = document.createElement('p');
-    titleP.innerHTML = movie.title;
-
-    var summaryP = document.createElement('p');
-    summaryP.innerHTML = movie.storyline.substring(0, 30) + ' ...';
-
-    var detailsDiv = document.createElement('div');
-    detailsDiv.appendChild(titleP);
-    detailsDiv.appendChild(summaryP);
-
-    var listImage = document.createElement('img');
-    listImage.setAttribute('src', movie.coverUrl);
-    listImage.setAttribute('alt', movie.title + ' image');
-
-    var listItemDiv = document.createElement('div');
-    listItemDiv.setAttribute('class', 'movie-list-item');
-    listItemDiv.appendChild(listImage);
-    listItemDiv.appendChild(detailsDiv);
-
-    this.thumbHtml = function () {
-        return movieBox.outerHTML;
-    };
-
-    this.listItemHtml = function () {
-        return listItemDiv.outerHTML;
-    }
+function displayMovieDetails(movie) {
+    console.log(movie);
+    // var detailsDiv = document.getElementById('movie-details');
+    // var detailsTitleH = document.getElementById("movie-details-title");
+    // var detailsCoverDiv = document.getElementById("movie-details-cover");
+    // var detailsStoryLineP = document.getElementById("movie-details-storyline");
+    // detailsTitleH.innerText = movie.title + ' [' + movie.year + ']';
+    // detailsDiv.style.display = 'none';
 }

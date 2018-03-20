@@ -1,5 +1,3 @@
-// var movie = new Movie(title, year, storyline, coverUrl);
-// var celeb = new Celebrity(name, role, bio, dob, photoUrl);
 var movieNeyngi = new Movie('Neyngi Yaaru Vakivee', 2016, 'Neyngi Yaaru Vakivee is a 2016 Maldivian romantic film directed by Hussain Munawwar. Produced under the banner Kid Production, the film stars Aminath Rishfa and Ahmed Azmeel in pivotal roles. The film also stars Ahmed Nimal, Ismail Jumaih and Maleeha Waheedh in supporting roles. The film was shot at different locations from Sri Lanka.', 'images/movies/Neyngi_Yaaru_Vakivee.jpeg');
 
 var movieVishka = new Movie('Vishka', 2016, 'Vishka is a 2016 Maldivian crime film directed by Ravee Farooq. Produced by Aishath Rishmy under Yaaraa Productions, the film stars Farooq, Rishmy and Ahmed Saeed in pivotal roles. The film is scheduled to release in August 2016.', 'images/movies/vishka.png');
@@ -31,10 +29,27 @@ var moviesReleasingThisWeek = [];
 moviesReleasingThisWeek.push(movieVaashey);
 moviesReleasingThisWeek.push(movieEreah);
 moviesReleasingThisWeek.push(movieAhsham);
-moviesReleasingThisWeek.push(movieEmme);
+moviesReleasingThisWeek.push(movieIngili);
 
 var moviesNowShowing = [];
 moviesNowShowing.push(movieMikoe);
 moviesNowShowing.push(movieRandhari);
 moviesNowShowing.push(movieSazaa);
-moviesNowShowing.push(movieIngili);
+moviesNowShowing.push(movieEmme);
+
+var allMovies = [
+    movieNeyngi,
+    movieVishka,
+    movieVafaatheri,
+    movieVaashey,
+    movieEreah,
+    movieAhsham,
+    movieEmme,
+    movieMikoe,
+    movieRandhari,
+    movieSazaa,
+    movieIngili,
+];
+
+
+var celebAbullaMuaz = new Celebrity('Abdulla Muaz', bio, dob, photoUrl);
