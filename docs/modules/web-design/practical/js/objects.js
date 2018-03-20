@@ -52,4 +52,11 @@ var allMovies = [
 ];
 
 
-var celebAbullaMuaz = new Celebrity('Abdulla Muaz', bio, dob, photoUrl);
+var celebAbullaMuaz = new Celebrity('Abdulla Muaz', 'Abdulla Muaz was born on December 14, 1970 in Velidhoo, Maldives. He is an actor, known for Ingili(2013) and Heylaa (2006).', '1970-12-14', 'images/celebs/abdulla-muaz.jpg');
+var celebAhmedAzmeel = new Celebrity('Ahmed Azmeel', 'Ahmed Azmeel was born on April 23, 1982 in Thulhaadhoo, Kaafu Atoll. He is an actor, dancer and model.', '1982-04-23', 'images/celebs/ahmed-azmeel.jpeg');
+var celebAhmedNashith = new Celebrity('Ahmed Nashith', 'Ahmed Nashith is an actor, known for Hulhudhaan (2014).', '1987-03-09', 'images/celebs/ahmed-nashith.jpg');
+var celebAhmedNimal = new Celebrity('Ahmed Nimal', 'Ahmed Nimal is an actor, known for Birukuda Ali.', '1965-10-02', 'images/celebs/ahmed-nimal.jpg');
+var celebAhmedSunie = new Celebrity('Ahmed Sunie', 'Ahmed Suie is an actor, TV presenter, but better known as a comedian.', '1985-12-20', 'images/celebs/ahmed-sunie.jpg');
+var celebAminathRishfa = new Celebrity('Aminath Rishfa', 'Aminath Rishfa is an actress, known for Hahdhu (2017).', '1986-01-10', 'images/celebs/rishfa.jpeg');
+var celebAishathRishmy = new Celebrity('Aishath Rishmy', 'Aishath Rishmy is a popular actress, dancer, model and director coming from an entertainment background.', '1985-05-28', 'images/celebs/rishmy.jpg');
+var celebAliSeezan = new Celebrity('Ali Seezan', 'Ali Seezan (born 6 February 1977) is a Maldivian actor. He has established a career in Maldives Film Industry and is a recipient of two National Film Awards.', '1977-02-06', 'images/celebs/seezan.jpg');

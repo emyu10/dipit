@@ -155,3 +155,58 @@ a {
         }
     }
 }
+
+.celeb-box {
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+    background: @color-black;
+    color: @color-white;
+    div {
+        img {
+            width: 200px;
+            height: 250px;
+        }
+    }
+    .details {
+        color: @color-white;
+        padding: 10px;
+        p {
+            color: @color-white;
+        }
+    }
+}
+
+#celebs-container {
+    display: grid;
+    grid-template-columns: 70px auto;
+    margin-top: 20px;
+    .letters {
+        width: 50px;
+        padding: 10px;
+        font-size: 16pt;
+        font-weight: bold;
+        text-align: center;
+        background-color: darken(rgba(@color-accent-r, @color-accent-g, @color-accent-b, 0.9), 50%);
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            li {
+                padding: 0;
+                margin: 0 0 10px 0;
+                cursor: pointer;
+                &:hover {
+                    color: @color-accent;
+                }
+            }
+        }
+    }
+    .celeb-thumbs {
+        padding: 20px;
+        background: @color-default-primary;
+        h1, h2, h3 {
+            color: darken(@color-accent, 50%);
+        }
+    }
+}

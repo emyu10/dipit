@@ -169,3 +169,56 @@ a {
 #movie-details .wrapper .content {
   padding: 20px;
 }
+.celeb-box {
+  width: 200px;
+  float: left;
+  margin-right: 10px;
+  background: #000;
+  color: #fff;
+}
+.celeb-box div img {
+  width: 200px;
+  height: 250px;
+}
+.celeb-box .details {
+  color: #fff;
+  padding: 10px;
+}
+.celeb-box .details p {
+  color: #fff;
+}
+#celebs-container {
+  display: grid;
+  grid-template-columns: 70px auto;
+  margin-top: 20px;
+}
+#celebs-container .letters {
+  width: 50px;
+  padding: 10px;
+  font-size: 16pt;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(82, 0, 0, 0.9);
+}
+#celebs-container .letters ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#celebs-container .letters ul li {
+  padding: 0;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+}
+#celebs-container .letters ul li:hover {
+  color: #FF5252;
+}
+#celebs-container .celeb-thumbs {
+  padding: 20px;
+  background: #607D8B;
+}
+#celebs-container .celeb-thumbs h1,
+#celebs-container .celeb-thumbs h2,
+#celebs-container .celeb-thumbs h3 {
+  color: #520000;
+}
