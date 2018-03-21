@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Form Example</title>
+<style type="text/css">
+.right-align {
+	text-align: right;
+	padding-right: 10px;
+}
+</style>
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+</script>
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="15%" class="right-align">First Name:</td>
+    <td width="85%" onfocus="MM_validateForm('fname','','R','lname','','R','age','','NinRange18:65','email','','RisEmail','pass','','R');return document.MM_returnValue">
+      <input type="text" name="fname" id="fname" />
+      <span id="sprytextfield1"><span class="textfieldRequiredMsg"> value is required.</span></span></td>
+  </tr>
+  <tr>
+    <td class="right-align">Last Name:</td>
+    <td><input type="text" name="lname" id="lname" /></td>
+  </tr>
+  <tr>
+    <td class="right-align">Age:</td>
+    <td><input type="text" name="age" id="age" /></td>
+  </tr>
+  <tr>
+    <td class="right-align">Email:</td>
+    <td><input type="text" name="email" id="email" /></td>
+  </tr>
+  <tr>
+    <td class="right-align">Password:</td>
+    <td><input type="password" name="pass" id="pass" />
+      <label>
+        <input type="file" name="photo" id="photo" />
+      </label></td>
+  </tr>
+  <tr>
+    <td class="right-align">Sex:</td>
+    <td><label>
+      <input type="radio" name="radio" id="male" value="male" />
+      male
+      <input type="radio" name="radio" id="female" value="female" />
+      female</label></td>
+  </tr>
+  <tr>
+    <td class="right-align">About Your Career:</td>
+    <td><label>
+      <input type="checkbox" name="student" id="student" />
+      I am a student
+      <input type="checkbox" name="business" id="business" />
+      I am a business man</label></td>
+  </tr>
+  <tr>
+    <td class="right-align">Birthday:</td>
+    <td><label>Day
+      <select name="bdate-day" size="1" id="bdate-day">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+      </select>
+    </label>
+      <label>Month
+        <select name="bdate-month" id="bdate-month">
+          <option>Jan</option>
+          <option>Feb</option>
+          <option>Mar</option>
+          <option>Apr</option>
+          <option>May</option>
+          <option>Jun</option>
+          <option>Jul</option>
+          <option>Aug</option>
+          <option>Sep</option>
+          <option>Oct</option>
+          <option>Nov</option>
+          <option>Dec</option>
+        </select>
+      </label>
+      <label>Year
+        <select name="bdate-year" id="bdate-year">
+        </select>
+      </label></td>
+  </tr>
+  <tr>
+    <td colspan="2"><input type="submit" name="btnsubmit" id="btnsubmit" value="Submit" />
+      <input type="submit" name="btnreset" id="btnreset" value="Submit" /></td>
+  </tr>
+</table>
+</form>
+<script type="text/javascript">
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+</script>
+</body>
+</html>
