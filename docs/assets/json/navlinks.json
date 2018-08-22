@@ -145,5 +145,28 @@
         ],
         "sidebarLinksLoaded": false,
         "sidebarContent": ""
+    },
+    {
+        "id": "hardware-and-networking",
+        "title": "Hardware & Networking",
+        "module": "Module Five",
+        "link": "#/hardware-and-networking",
+        "loadInto": "page",
+        "sidebarLinks": [
+            {
+                "id": "introduction",
+                "title": "Introduction",
+                "link": "#/hardware-and-networking/introduction",
+                "loadInto": "page"
+            },
+            {
+                "id": "pc-components",
+                "title": "PC Components",
+                "link": "#/hardware-and-networking/pc-components",
+                "loadInto": "page"
+            }
+        ],
+        "sidebarLinksLoaded": false,
+        "sidebarContent": ""
     }
 ]
