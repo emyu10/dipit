@@ -164,6 +164,19 @@
                 "title": "PC Components",
                 "link": "#/hardware-and-networking/pc-components",
                 "loadInto": "page"
+            },
+            {
+                "id": "motherboard",
+                "title": "Motherboard",
+                "link": "#/hardware-and-networking/motherboard",
+                "loadInto": "page"
+            }
+            ,
+            {
+                "id": "ports",
+                "title": "Ports",
+                "link": "#/hardware-and-networking/ports",
+                "loadInto": "page"
             }
         ],
         "sidebarLinksLoaded": false,
