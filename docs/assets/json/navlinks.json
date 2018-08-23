@@ -170,12 +170,17 @@
                 "title": "Motherboard",
                 "link": "#/hardware-and-networking/motherboard",
                 "loadInto": "page"
-            }
-            ,
+            },
             {
                 "id": "ports",
                 "title": "Ports",
                 "link": "#/hardware-and-networking/ports",
+                "loadInto": "page"
+            },
+            {
+                "id": "server",
+                "title": "Server",
+                "link": "#/hardware-and-networking/server",
                 "loadInto": "page"
             }
         ],
