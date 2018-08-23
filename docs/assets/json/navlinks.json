@@ -188,6 +188,12 @@
                 "title": "Processor",
                 "link": "#/hardware-and-networking/processor",
                 "loadInto": "page"
+            },
+            {
+                "id": "bios",
+                "title": "BIOS",
+                "link": "#/hardware-and-networking/bios",
+                "loadInto": "page"
             }
         ],
         "sidebarLinksLoaded": false,
