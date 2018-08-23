@@ -182,6 +182,12 @@
                 "title": "Server",
                 "link": "#/hardware-and-networking/server",
                 "loadInto": "page"
+            },
+            {
+                "id": "processor",
+                "title": "Processor",
+                "link": "#/hardware-and-networking/processor",
+                "loadInto": "page"
             }
         ],
         "sidebarLinksLoaded": false,
