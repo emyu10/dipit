@@ -1,0 +1,41 @@
+/* CSS Document */
+body {
+	padding:0;
+	margin: 0;
+	background: #D2E7FB;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+#wrapper {
+	margin:0px auto;
+	width:1170px;
+	background:#FFF;
+}
+
+#banner img {
+	width:100%;
+}
+
+#menubar-container {
+	background:#09F;
+	height: 35px;
+}
+
+#footer {
+	background:#EDE0EC;
+	padding:10px;
+	font-size:10pt;
+}
+
+#footer a {
+	color:#930;
+	text-decoration:none;
+}
+
+#main-content {
+	padding:20px;
+}
+
+h1, h2, h3 {
+	color:#09F;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:spry="http://ns.adobe.com/spry">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ministry of Health</title>
+<style>
+.odd-data {
+	background:#CCF;
+}
+.even-data {
+	background:#CFF;
+}
+.row-hover {
+	color:#0FC;
+}
+.row-select {
+	color:#0CC;
+}
+</style>
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryData.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryHTMLDataSet.js" type="text/javascript"></script>
+<script type="text/javascript">
+var privateMedicalCenters = new Spry.Data.HTMLDataSet("private-facility-data.html", "private-medical-centers");
+privateMedicalCenters.setColumnType("S/no", "number");
+privateMedicalCenters.setColumnType("Registered_Date", "date");
+</script>
+</head>
+
+<body>
+
+<div spry:region="privateMedicalCenters">
+  <table>
+    <tr>
+      <th spry:sort="S/no">S/no</th>
+      <th spry:sort="Catagory">Catagory</th>
+      <th spry:sort="Clinic_Name">Clinic_Name</th>
+      <th spry:sort="Clinic_Address">Clinic_Address</th>
+      <th spry:sort="Clinic_Phone_No">Clinic_Phone_No</th>
+      <th spry:sort="Registered_Date">Registered_Date</th>
+    </tr>
+    <tr spry:repeat="privateMedicalCenters" spry:odd="odd-data" spry:even="even-data" spry:hover="row-hover" spry:select="row-select">
+      <td>{S/no}</td>
+      <td>{Catagory}</td>
+      <td>{Clinic_Name}</td>
+      <td>{Clinic_Address}</td>
+      <td>{Clinic_Phone_No}</td>
+      <td>{Registered_Date}</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
